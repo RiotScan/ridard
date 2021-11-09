@@ -69,21 +69,21 @@ Properties.BackgroundTransparency = 1.000
 Properties.BorderColor3 = Color3.fromRGB(70, 70, 70)
 Properties.BorderSizePixel = 2
 Properties.Position = UDim2.new(0.5, 0, 1, 0)
-Properties.Size = UDim2.new(0, 255, 0, 40)
+Properties.Size = UDim2.new(0, 260, 0, 40)
 
 Gradient1.Name = "Gradient1"
 Gradient1.Parent = Properties
-Gradient1.AnchorPoint = Vector2.new(0.5, 0.5)
+Gradient1.AnchorPoint = Vector2.new(0.5, 0)
 Gradient1.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-Gradient1.Position = UDim2.new(0.5, 0, 0.189999998, 0)
-Gradient1.Size = UDim2.new(0, 255, 0, 15)
+Gradient1.Position = UDim2.new(0.5, 0, 0.2, 0)
+Gradient1.Size = UDim2.new(0, 260, 0, 15)
+Gradient1.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Gradient1.BorderSizePixel = 2
 
 Fps.Name = "Fps"
 Fps.Parent = Gradient1
 Fps.BackgroundColor3 = Color3.fromRGB(50, 50, 50)
 Fps.BackgroundTransparency = 2.000
-Fps.BorderColor3 = Color3.fromRGB(0, 0, 0)
-Fps.BorderSizePixel = 2
 Fps.Size = UDim2.new(0, 255, 0, 15)
 Fps.Font = Enum.Font.Code
 Fps.Text = "ur fps, stoopid"
@@ -97,10 +97,12 @@ UIGradient_3.Parent = Gradient1
 
 Gradient2.Name = "Gradient2"
 Gradient2.Parent = Properties
-Gradient2.AnchorPoint = Vector2.new(0.5, 0.5)
+Gradient2.AnchorPoint = Vector2.new(0.5, 0)
 Gradient2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-Gradient2.Position = UDim2.new(0.5, 0, 0.75, 0)
-Gradient2.Size = UDim2.new(0, 255, 0, 15)
+Gradient2.Position = UDim2.new(0.5, 0, 0.6, 0)
+Gradient2.Size = UDim2.new(0, 260, 0, 15)
+Gradient2.BorderSizePixel = 2
+Gradient2.BorderColor3 = Color3.fromRGB(0, 0, 0)
 
 Time.Name = "Time"
 Time.Parent = Gradient2
