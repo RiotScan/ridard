@@ -1,0 +1,304 @@
+local AristoisWatermark = Instance.new("ScreenGui")
+local Drag = Instance.new("Frame")
+local Watermark = Instance.new("Frame")
+local UIGradient = Instance.new("UIGradient")
+local Frame = Instance.new("Frame")
+local UIGradient_2 = Instance.new("UIGradient")
+local TextLabel = Instance.new("TextLabel")
+local Properties = Instance.new("Frame")
+local Gradient1 = Instance.new("Frame")
+local Fps = Instance.new("TextLabel")
+local UIGradient_3 = Instance.new("UIGradient")
+local Gradient2 = Instance.new("Frame")
+local Time = Instance.new("TextLabel")
+local UIGradient_4 = Instance.new("UIGradient")
+local TextButton = Instance.new("TextButton")
+
+--Properties:
+
+AristoisWatermark.Name = "AristoisWatermark"
+AristoisWatermark.Parent = game.CoreGui
+AristoisWatermark.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+
+Drag.Name = "Drag"
+Drag.Parent = AristoisWatermark
+Drag.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Drag.BackgroundTransparency = 1.000
+Drag.Position = UDim2.new(0, 1, 0.400000006, 49)
+Drag.Size = UDim2.new(0, 260, 0, 20)
+
+Watermark.Name = "Watermark"
+Watermark.Parent = Drag
+Watermark.AnchorPoint = Vector2.new(0.5, 0.5)
+Watermark.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Watermark.BorderColor3 = Color3.fromRGB(70, 70, 70)
+Watermark.BorderSizePixel = 2
+Watermark.Position = UDim2.new(0.5, 0, 0.5, 0)
+Watermark.Size = UDim2.new(0, 260, 0, 20)
+Watermark.ZIndex = 2
+
+UIGradient.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(65, 65, 65)), ColorSequenceKeypoint.new(0.29, Color3.fromRGB(63, 63, 63)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(30, 30, 30))}
+UIGradient.Rotation = 90
+UIGradient.Parent = Watermark
+
+Frame.Parent = Watermark
+Frame.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Frame.BorderSizePixel = 0
+Frame.Size = UDim2.new(1, 0, 0, 2)
+
+UIGradient_2.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(30, 146, 110)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(9, 84, 59))}
+UIGradient_2.Rotation = 90
+UIGradient_2.Parent = Frame
+
+TextLabel.Parent = Watermark
+TextLabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel.BackgroundTransparency = 1.000
+TextLabel.Position = UDim2.new(-0.0076923077, 0, -0.100000001, 0)
+TextLabel.Size = UDim2.new(0, 260, 0, 20)
+TextLabel.Font = Enum.Font.Code
+TextLabel.Text = "Watermark"
+TextLabel.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel.TextSize = 15.000
+TextLabel.TextStrokeTransparency = 0.000
+
+Properties.Name = "Properties"
+Properties.Parent = Drag
+Properties.AnchorPoint = Vector2.new(0.5, 0)
+Properties.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Properties.BackgroundTransparency = 1.000
+Properties.BorderColor3 = Color3.fromRGB(70, 70, 70)
+Properties.BorderSizePixel = 2
+Properties.Position = UDim2.new(0.5, 0, 1, 0)
+Properties.Size = UDim2.new(0, 255, 0, 40)
+
+Gradient1.Name = "Gradient1"
+Gradient1.Parent = Properties
+Gradient1.AnchorPoint = Vector2.new(0.5, 0.5)
+Gradient1.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Gradient1.Position = UDim2.new(0.5, 0, 0.189999998, 0)
+Gradient1.Size = UDim2.new(0, 255, 0, 15)
+
+Fps.Name = "Fps"
+Fps.Parent = Gradient1
+Fps.BackgroundColor3 = Color3.fromRGB(50, 50, 50)
+Fps.BackgroundTransparency = 2.000
+Fps.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Fps.BorderSizePixel = 2
+Fps.Size = UDim2.new(0, 255, 0, 15)
+Fps.Font = Enum.Font.Code
+Fps.Text = "ur fps, stoopid"
+Fps.TextColor3 = Color3.fromRGB(255, 255, 255)
+Fps.TextSize = 14.000
+Fps.TextStrokeTransparency = 0.000
+
+UIGradient_3.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(65, 65, 65)), ColorSequenceKeypoint.new(0.29, Color3.fromRGB(63, 63, 63)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(30, 30, 30))}
+UIGradient_3.Rotation = 90
+UIGradient_3.Parent = Gradient1
+
+Gradient2.Name = "Gradient2"
+Gradient2.Parent = Properties
+Gradient2.AnchorPoint = Vector2.new(0.5, 0.5)
+Gradient2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Gradient2.Position = UDim2.new(0.5, 0, 0.75, 0)
+Gradient2.Size = UDim2.new(0, 255, 0, 15)
+
+Time.Name = "Time"
+Time.Parent = Gradient2
+Time.BackgroundColor3 = Color3.fromRGB(50, 50, 50)
+Time.BackgroundTransparency = 1.000
+Time.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Time.Size = UDim2.new(0, 250, 0, 15)
+Time.Font = Enum.Font.Code
+Time.Text = "time doxxed"
+Time.TextColor3 = Color3.fromRGB(255, 255, 255)
+Time.TextSize = 14.000
+Time.TextStrokeTransparency = 0.000
+Time.TextWrapped = true
+
+UIGradient_4.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(65, 65, 65)), ColorSequenceKeypoint.new(0.29, Color3.fromRGB(63, 63, 63)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(30, 30, 30))}
+UIGradient_4.Rotation = 90
+UIGradient_4.Parent = Gradient2
+
+TextButton.Parent = Drag
+TextButton.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextButton.BackgroundTransparency = 1.000
+TextButton.Position = UDim2.new(0.0076923077, 0, 1, 0)
+TextButton.Size = UDim2.new(0, 258, 0, 34)
+TextButton.Font = Enum.Font.SourceSans
+TextButton.Text = ""
+TextButton.TextColor3 = Color3.fromRGB(0, 0, 0)
+TextButton.TextSize = 14.000
+
+-- Scripts:
+
+local function GQPYEQL_fake_script() -- Fps.LocalScript 
+	local script = Instance.new('LocalScript', Fps)
+
+	local RunService = game:GetService("RunService")
+	local FpsLabel = script.Parent
+	local TimeFunction = RunService:IsRunning() and time or os.clock
+	
+	local LastIteration, Start
+	local FrameUpdateTable = {}
+	
+	local function HeartbeatUpdate()
+		LastIteration = TimeFunction()
+		for Index = #FrameUpdateTable, 1, -1 do
+			FrameUpdateTable[Index + 1] = FrameUpdateTable[Index] >= LastIteration - 1 and FrameUpdateTable[Index] or nil
+		end
+	
+		FrameUpdateTable[1] = LastIteration
+		FpsLabel.Text = tostring(math.floor(TimeFunction() - Start >= 1 and #FrameUpdateTable or #FrameUpdateTable / (TimeFunction() - Start))) .. " FPS"
+	end
+	
+	Start = TimeFunction()
+	RunService.Heartbeat:Connect(HeartbeatUpdate)
+end
+coroutine.wrap(GQPYEQL_fake_script)()
+local function VQOT_fake_script() -- TextButton.LocalScript 
+	local script = Instance.new('LocalScript', TextButton)
+
+	local TweenService = game:GetService("TweenService")
+	
+	local pull = script.Parent.Parent.Properties
+	
+	local START_SIZE = pull.Size
+	local START_POSITION = pull.Position
+	local GOAL_SIZE = UDim2.new(0, 255, 0, 0)
+	local GOAL_POSITION = UDim2.new(0.5, 0, 0.5, 0)
+	local TIME = 0.2
+	
+	local info = TweenInfo.new(TIME, Enum.EasingStyle.Linear, Enum.EasingDirection.Out, 0, false, 0)
+	
+	local mouseEnterTween = TweenService:Create(pull, info, {Size = GOAL_SIZE, Position = GOAL_POSITION})
+	local mouseLeaveTween = TweenService:Create(pull, info, {Size = START_SIZE, Position = START_POSITION})
+	
+	script.Parent.Activated:Connect(function()
+		if pull .Size == START_SIZE then
+			mouseEnterTween:Play()
+			mouseEnterTween.Completed:wait()
+		elseif pull .Size == GOAL_SIZE then
+			mouseLeaveTween:Play()
+			mouseLeaveTween.Completed:wait()
+		end
+	end)
+		
+end
+coroutine.wrap(VQOT_fake_script)()
+
+local function PZMBQTL_fake_script() -- Fps.LocalScript 
+	local script = Instance.new('LocalScript', Fps)
+
+	local RunService = game:GetService("RunService")
+	local FpsLabel = script.Parent
+	local TimeFunction = RunService:IsRunning() and time or os.clock
+
+	local LastIteration, Start
+	local FrameUpdateTable = {}
+
+	local function HeartbeatUpdate()
+		LastIteration = TimeFunction()
+		for Index = #FrameUpdateTable, 1, -1 do
+			FrameUpdateTable[Index + 1] = FrameUpdateTable[Index] >= LastIteration - 1 and FrameUpdateTable[Index] or nil
+		end
+
+		FrameUpdateTable[1] = LastIteration
+		FpsLabel.Text = "FPS:".. tostring(math.floor(TimeFunction() - Start >= 1 and #FrameUpdateTable or #FrameUpdateTable / (TimeFunction() - Start))) 
+	end
+
+	Start = TimeFunction()
+	RunService.Heartbeat:Connect(HeartbeatUpdate)
+end
+coroutine.wrap(PZMBQTL_fake_script)()
+
+
+local function ZBZX_fake_script() -- Time.LocalScript 
+	local script = Instance.new('LocalScript', Time)
+
+	local mo = "A.M."
+	local mont = nil
+	while wait() do
+		local l = math.fmod(tick(),86400)
+		local h = math.floor(l/3600)
+		local m = math.floor(l/60-h*60)
+		local s = math.floor(math.fmod(l,60))
+		local y = math.floor(1970+tick()/31579200)
+		local mon = {{"January",31,31},{"February",59,28},{"March",90,31},{"April",120,30},{"May",151,31},{"June",181,30},{"July",212,31},{"August",243,31},{"September",273,30},{"October",304,31},{"November",334,30},{"December",365,31}}
+		if y%4 == 0 then
+			mon[2][3] = 29
+			for i,v in pairs(mon) do
+				if i ~= 1 then
+					v[2] = v[2] + 1
+				end
+			end
+		end
+		local d = math.floor(tick()/86400%365.25+1)
+		for i,v in pairs(mon) do
+			if v[2]-v[3]<=d then
+				mont = i
+			end
+		end
+		d = d + mon[mont][3]-mon[mont][2]
+		if m <= 9 then
+			m = "0" ..m
+		end
+		if s <= 9 then
+			s = "0" ..s
+		end
+		if h >= 12 then
+			mo = "P.M."
+		else
+			mo = "A.M."
+		end
+		if h > 12 then
+			h = h - 12
+		end
+		script.Parent.Text = "" ..h.. ":" ..m.. ":" ..s.. " "
+	end
+end
+coroutine.wrap(ZBZX_fake_script)()
+local function POWDOGC_fake_script() -- ScreenLabel.LocalScript 
+	local script = Instance.new('LocalScript', Drag)
+
+	local gui = script.Parent
+
+end
+
+local UserInputService = game:GetService("UserInputService")
+
+
+local dragging
+local dragInput
+local dragStart
+local startPos
+
+local function update(input)
+	local delta = input.Position - dragStart
+	Drag.Position = UDim2.new(startPos.X.Scale, startPos.X.Offset + delta.X, startPos.Y.Scale, startPos.Y.Offset + delta.Y)
+end
+
+Drag.InputBegan:Connect(function(input)
+	if input.UserInputType == Enum.UserInputType.MouseButton1 or input.UserInputType == Enum.UserInputType.Touch then
+		dragging = true
+		dragStart = input.Position
+		startPos = Drag.Position
+
+		input.Changed:Connect(function()
+			if input.UserInputState == Enum.UserInputState.End then
+				dragging = false
+			end
+		end)
+	end
+end)
+
+Drag.InputChanged:Connect(function(input)
+	if input.UserInputType == Enum.UserInputType.MouseMovement or input.UserInputType == Enum.UserInputType.Touch then
+		dragInput = input
+	end
+end)
+
+UserInputService.InputChanged:Connect(function(input)
+	if input == dragInput and dragging then
+		update(input)
+	end
+end)
