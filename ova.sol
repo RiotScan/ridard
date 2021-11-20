@@ -36,6 +36,6 @@
 		if h > 12 then
 			h = h - 12
 		end
-		watermark:CreateWatermark("Ova.Solutions |" ..h.. ":" ..m.. ":" ..s..)
+		watermark:CreateWatermark("Ova.Solutions |" ..user.. "|" ..h.. ":" ..m.. ":" ..s..)
 	end
 end
