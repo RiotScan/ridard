@@ -2,6 +2,7 @@
 local AsianHookWM = Instance.new("ScreenGui")
 AsianHookWM.Name = "AsianHookWM"
 AsianHookWM.Parent = game.CoreGui
+AsianHookWM.Enabled = false
 
 local Watermark = Instance.new("Frame")
 Watermark.Name = "Watermark"
