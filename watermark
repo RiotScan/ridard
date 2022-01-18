@@ -193,6 +193,7 @@ function library:New(name)
 		UIListLayout.HorizontalAlignment = Enum.HorizontalAlignment.Center
 		UIListLayout.SortOrder = Enum.SortOrder.LayoutOrder
 
+		KeybindList.Enabled = false
 		KeybindList.Parent = game.CoreGui
 	end
 
