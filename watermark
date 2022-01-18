@@ -4078,6 +4078,7 @@ function library:New(name)
 					Value.Size = UDIM2(0, 55, 0, 15)
 					Value.Font = Enum.Font.Code
 					Value.Text = "50"
+					Value.TextTransparency = 1.000
 					Value.TextColor3 = COL3RGB(200, 200, 200)
 					Value.TextSize = 14.000
 					Value.TextXAlignment = Enum.TextXAlignment.Right
