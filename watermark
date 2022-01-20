@@ -428,7 +428,7 @@ function library:New(name)
 
 			local firs = true
 			local selected
-			function MSector:Tab(text, image)
+			function MSector:Tab(text)
 				local tab = {}
 				values[tabname][sectorname][text] = {}
 				local tabtext = text
