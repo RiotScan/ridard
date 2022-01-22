@@ -1963,7 +1963,7 @@ function library:New(name)
 
 						UIGradient.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(255, 255, 255)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(100, 100, 100))}
 						UIGradient.Rotation = 90
-						UIGradient.Parent = Frame_2
+						UIGradient.Parent = Frame
 
 						Value.Name = "Value"
 						Value.Parent = TextLabel
@@ -4145,7 +4145,7 @@ function library:New(name)
 
 					UIGradient.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(255, 255, 255)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(100, 100, 100))}
 					UIGradient.Rotation = 90
-					UIGradient.Parent = Frame_2
+					UIGradient.Parent = Frame
 
 					Value.Name = "Value"
 					Value.Parent = TextLabel
