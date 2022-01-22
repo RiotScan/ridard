@@ -6,6 +6,7 @@ local ConfigSave = Signal.new("ConfigSave")
 local ConfigLoad = Signal.new("ConfigLoad")
 local cfglocation = "asian_config/"
 
+
 local Vc2 = Vector2.new
 local Vc3 = Vector3.new
 local CF = CFrame.new
