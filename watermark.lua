@@ -82,6 +82,7 @@ function library:SaveConfig(cfg)
 	end
 	writefile(cfglocation..cfg..".txt", game:GetService("HttpService"):JSONEncode(copy))
 end
+
 function library:New(name)
 	local menu = {}
 
@@ -737,42 +738,31 @@ function library:New(name)
 	
 						local Toggle = IST("Frame")
 						local Button = IST("TextButton")
-						local backcolor = Instance.new("Frame")
 						local Color = IST("Frame")
 						local TextLabel = IST("TextLabel")
 	
 						Toggle.Name = "Toggle"
-						Toggle.Parent = Frame
-						Toggle.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+						Toggle.Parent = tab1
+						Toggle.BackgroundColor3 = COL3RGB(255, 255, 255)
 						Toggle.BackgroundTransparency = 1.000
-						Toggle.Position = UDim2.new(0, 0, 0.282037079, 0)
-						Toggle.Size = UDim2.new(1, 0, 0.0370370522, 15)
-
+						Toggle.Size = UDIM2(1, 0, 0, 15)
+	
 						Button.Name = "Button"
 						Button.Parent = Toggle
-						Button.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+						Button.BackgroundColor3 = COL3RGB(255, 255, 255)
 						Button.BackgroundTransparency = 1.000
-						Button.Size = UDim2.new(1, 0, 1, 0)
-						Button.Font = Enum.Font.GothamSemibold
+						Button.Size = UDIM2(1, 0, 1, 0)
+						Button.Font = Enum.Font.SourceSans
 						Button.Text = ""
-						Button.TextColor3 = Color3.fromRGB(0, 0, 0)
-						Button.TextSize = 12.000
+						Button.TextColor3 = COL3RGB(0, 0, 0)
+						Button.TextSize = 14.000
 	
-						backcolor.Name = "backcolor"
-						backcolor.Parent = Button_3
-						backcolor.AnchorPoint = Vector2.new(0, 0.5)
-						backcolor.BackgroundColor3 = Color3.fromRGB(40, 40, 40)
-						backcolor.BorderColor3 = Color3.fromRGB(0, 0, 0)
-						backcolor.Position = UDim2.new(0, 15, 0.5, 0)
-						backcolor.Size = UDim2.new(0, 12, 0, 12)
 						Color.Name = "Color"
-						Color.Parent = backcolor
-						Color.AnchorPoint = Vector2.new(0.5, 0.5)
-						Color.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-						Color.BorderColor3 = Color3.fromRGB(30, 30, 30)
-						Color.BorderSizePixel = 0
-						Color.Position = UDim2.new(0.5, 0, 0.5, 0)
-						Color.Size = UDim2.new(0, 10, 0, 10)
+						Color.Parent = Button
+						Color.BackgroundColor3 = COL3RGB(15, 15, 15)
+						Color.BorderColor3 = COL3RGB(1, 1, 1)
+						Color.Position = UDIM2(0, 15, 0.5, -5)
+						Color.Size = UDIM2(0, 8, 0, 8)
 						local UIGradient = IST("UIGradient")
 						UIGradient.Color = ColorSequence.new{ColorSequenceKeypoint.new(0, CLR), ColorSequenceKeypoint.new(1, COL3RGB(100, 100, 100))}
 						UIGradient.Rotation = 90
@@ -1054,42 +1044,31 @@ function library:New(name)
 	
 						local Toggle = IST("Frame")
 						local Button = IST("TextButton")
-						local backcolor = Instance.new("Frame")
 						local Color = IST("Frame")
 						local TextLabel = IST("TextLabel")
 	
 						Toggle.Name = "Toggle"
-						Toggle.Parent = Frame
-						Toggle.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+						Toggle.Parent = tab1
+						Toggle.BackgroundColor3 = COL3RGB(255, 255, 255)
 						Toggle.BackgroundTransparency = 1.000
-						Toggle.Position = UDim2.new(0, 0, 0.282037079, 0)
-						Toggle.Size = UDim2.new(1, 0, 0.0370370522, 15)
-
+						Toggle.Size = UDIM2(1, 0, 0, 15)
+	
 						Button.Name = "Button"
 						Button.Parent = Toggle
-						Button.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+						Button.BackgroundColor3 = COL3RGB(255, 255, 255)
 						Button.BackgroundTransparency = 1.000
-						Button.Size = UDim2.new(1, 0, 1, 0)
-						Button.Font = Enum.Font.GothamSemibold
+						Button.Size = UDIM2(1, 0, 1, 0)
+						Button.Font = Enum.Font.SourceSans
 						Button.Text = ""
-						Button.TextColor3 = Color3.fromRGB(0, 0, 0)
-						Button.TextSize = 12.000
+						Button.TextColor3 = COL3RGB(0, 0, 0)
+						Button.TextSize = 14.000
 	
-						backcolor.Name = "backcolor"
-						backcolor.Parent = Button_3
-						backcolor.AnchorPoint = Vector2.new(0, 0.5)
-						backcolor.BackgroundColor3 = Color3.fromRGB(40, 40, 40)
-						backcolor.BorderColor3 = Color3.fromRGB(0, 0, 0)
-						backcolor.Position = UDim2.new(0, 15, 0.5, 0)
-						backcolor.Size = UDim2.new(0, 12, 0, 12)
 						Color.Name = "Color"
-						Color.Parent = backcolor
-						Color.AnchorPoint = Vector2.new(0.5, 0.5)
-						Color.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-						Color.BorderColor3 = Color3.fromRGB(30, 30, 30)
-						Color.BorderSizePixel = 0
-						Color.Position = UDim2.new(0.5, 0, 0.5, 0)
-						Color.Size = UDim2.new(0, 10, 0, 10)
+						Color.Parent = Button
+						Color.BackgroundColor3 = COL3RGB(15, 15, 15)
+						Color.BorderColor3 = COL3RGB(1, 1, 1)
+						Color.Position = UDIM2(0, 15, 0.5, -5)
+						Color.Size = UDIM2(0, 8, 0, 8)
 						local UIGradient = IST("UIGradient")
 						UIGradient.Color = ColorSequence.new{ColorSequenceKeypoint.new(0, CLR), ColorSequenceKeypoint.new(1, COL3RGB(100, 100, 100))}
 						UIGradient.Rotation = 90
@@ -1138,42 +1117,31 @@ function library:New(name)
 	
 						local Toggle = IST("Frame")
 						local Button = IST("TextButton")
-						local backcolor = Instance.new("Frame")
 						local Color = IST("Frame")
 						local TextLabel = IST("TextLabel")
 	
 						Toggle.Name = "Toggle"
-						Toggle.Parent = Frame
-						Toggle.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+						Toggle.Parent = tab1
+						Toggle.BackgroundColor3 = COL3RGB(255, 255, 255)
 						Toggle.BackgroundTransparency = 1.000
-						Toggle.Position = UDim2.new(0, 0, 0.282037079, 0)
-						Toggle.Size = UDim2.new(1, 0, 0.0370370522, 15)
-
+						Toggle.Size = UDIM2(1, 0, 0, 15)
+	
 						Button.Name = "Button"
 						Button.Parent = Toggle
-						Button.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+						Button.BackgroundColor3 = COL3RGB(255, 255, 255)
 						Button.BackgroundTransparency = 1.000
-						Button.Size = UDim2.new(1, 0, 1, 0)
-						Button.Font = Enum.Font.GothamSemibold
+						Button.Size = UDIM2(1, 0, 1, 0)
+						Button.Font = Enum.Font.SourceSans
 						Button.Text = ""
-						Button.TextColor3 = Color3.fromRGB(0, 0, 0)
-						Button.TextSize = 12.000
+						Button.TextColor3 = COL3RGB(0, 0, 0)
+						Button.TextSize = 14.000
 	
-						backcolor.Name = "backcolor"
-						backcolor.Parent = Button_3
-						backcolor.AnchorPoint = Vector2.new(0, 0.5)
-						backcolor.BackgroundColor3 = Color3.fromRGB(40, 40, 40)
-						backcolor.BorderColor3 = Color3.fromRGB(0, 0, 0)
-						backcolor.Position = UDim2.new(0, 15, 0.5, 0)
-						backcolor.Size = UDim2.new(0, 12, 0, 12)
 						Color.Name = "Color"
-						Color.Parent = backcolor
-						Color.AnchorPoint = Vector2.new(0.5, 0.5)
-						Color.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-						Color.BorderColor3 = Color3.fromRGB(30, 30, 30)
-						Color.BorderSizePixel = 0
-						Color.Position = UDim2.new(0.5, 0, 0.5, 0)
-						Color.Size = UDim2.new(0, 10, 0, 10)
+						Color.Parent = Button
+						Color.BackgroundColor3 = COL3RGB(15, 15, 15)
+						Color.BorderColor3 = COL3RGB(1, 1, 1)
+						Color.Position = UDIM2(0, 15, 0.5, -5)
+						Color.Size = UDIM2(0, 8, 0, 8)
 						local UIGradient = IST("UIGradient")
 						UIGradient.Color = ColorSequence.new{ColorSequenceKeypoint.new(0, CLR), ColorSequenceKeypoint.new(1, COL3RGB(100, 100, 100))}
 						UIGradient.Rotation = 90
@@ -1410,42 +1378,31 @@ function library:New(name)
 	
 						local Toggle = IST("Frame")
 						local Button = IST("TextButton")
-						local backcolor = Instance.new("Frame")
 						local Color = IST("Frame")
 						local TextLabel = IST("TextLabel")
 	
 						Toggle.Name = "Toggle"
-						Toggle.Parent = Frame
-						Toggle.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+						Toggle.Parent = tab1
+						Toggle.BackgroundColor3 = COL3RGB(255, 255, 255)
 						Toggle.BackgroundTransparency = 1.000
-						Toggle.Position = UDim2.new(0, 0, 0.282037079, 0)
-						Toggle.Size = UDim2.new(1, 0, 0.0370370522, 15)
-
+						Toggle.Size = UDIM2(1, 0, 0, 15)
+	
 						Button.Name = "Button"
 						Button.Parent = Toggle
-						Button.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+						Button.BackgroundColor3 = COL3RGB(255, 255, 255)
 						Button.BackgroundTransparency = 1.000
-						Button.Size = UDim2.new(1, 0, 1, 0)
-						Button.Font = Enum.Font.GothamSemibold
+						Button.Size = UDIM2(1, 0, 1, 0)
+						Button.Font = Enum.Font.SourceSans
 						Button.Text = ""
-						Button.TextColor3 = Color3.fromRGB(0, 0, 0)
-						Button.TextSize = 12.000
+						Button.TextColor3 = COL3RGB(0, 0, 0)
+						Button.TextSize = 14.000
 	
-						backcolor.Name = "backcolor"
-						backcolor.Parent = Button_3
-						backcolor.AnchorPoint = Vector2.new(0, 0.5)
-						backcolor.BackgroundColor3 = Color3.fromRGB(40, 40, 40)
-						backcolor.BorderColor3 = Color3.fromRGB(0, 0, 0)
-						backcolor.Position = UDim2.new(0, 15, 0.5, 0)
-						backcolor.Size = UDim2.new(0, 12, 0, 12)
 						Color.Name = "Color"
-						Color.Parent = backcolor
-						Color.AnchorPoint = Vector2.new(0.5, 0.5)
-						Color.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-						Color.BorderColor3 = Color3.fromRGB(30, 30, 30)
-						Color.BorderSizePixel = 0
-						Color.Position = UDim2.new(0.5, 0, 0.5, 0)
-						Color.Size = UDim2.new(0, 10, 0, 10)
+						Color.Parent = Button
+						Color.BackgroundColor3 = COL3RGB(15, 15, 15)
+						Color.BorderColor3 = COL3RGB(1, 1, 1)
+						Color.Position = UDIM2(0, 15, 0.5, -5)
+						Color.Size = UDIM2(0, 8, 0, 8)
 						local UIGradient = IST("UIGradient")
 						UIGradient.Color = ColorSequence.new{ColorSequenceKeypoint.new(0, CLR), ColorSequenceKeypoint.new(1, COL3RGB(100, 100, 100))}
 						UIGradient.Rotation = 90
@@ -1919,64 +1876,69 @@ function library:New(name)
 	
 						tabsize = tabsize + UDIM2(0,0,0,25)
 	
-						local Slider = Instance.new("Frame")
-						local TextLabel = Instance.new("TextLabel")
-						local Button = Instance.new("TextButton")
-						local Frame = Instance.new("Frame")
-						local UIGradient = Instance.new("UIGradient")
-						local Value = Instance.new("TextLabel")
-
+						local Slider = IST("Frame")
+						local TextLabel = IST("TextLabel")
+						local Button = IST("TextButton")
+						local UIGradient2 = IST("UIGradient")
+						local Frame = IST("Frame")
+						local UIGradient = IST("UIGradient")
+						local Value = IST("TextLabel")
+	
 						Slider.Name = "Slider"
-						Slider.Parent = Inner
-						Slider.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+						Slider.Parent = tab1
+						Slider.BackgroundColor3 = COL3RGB(255, 255, 255)
 						Slider.BackgroundTransparency = 1.000
-						Slider.Size = UDim2.new(1, 0, 0.0450000018, 25)
-
+						Slider.Position = UDIM2(0, 0, 0.653061211, 0)
+						Slider.Size = UDIM2(1, 0, 0, 25)
+	
 						TextLabel.Parent = Slider
-						TextLabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+						TextLabel.BackgroundColor3 = COL3RGB(255, 255, 255)
 						TextLabel.BackgroundTransparency = 1.000
-						TextLabel.Position = UDim2.new(0, 32, 0, -2)
-						TextLabel.Size = UDim2.new(0, 29, 0, 15)
+						TextLabel.Position = UDIM2(0, 32, 0, -2)
+						TextLabel.Size = UDIM2(0, 100, 0, 15)
 						TextLabel.Font = Enum.Font.Code
-						TextLabel.Text = text..":"
-						TextLabel.TextColor3 = Color3.fromRGB(200, 200, 200)
+						TextLabel.Text = text
+						TextLabel.TextColor3 = COL3RGB(200, 200, 200)
 						TextLabel.TextSize = 14.000
-						TextLabel.TextStrokeTransparency = 0.000
 						TextLabel.TextXAlignment = Enum.TextXAlignment.Left
-
+	
 						Button.Name = "Button"
 						Button.Parent = Slider
-						Button.BackgroundColor3 = Color3.fromRGB(30, 30, 30)
-						Button.BorderColor3 = Color3.fromRGB(1, 1, 1)
-						Button.Position = UDim2.new(0, 30, 0, 15)
-						Button.Size = UDim2.new(0, 175, 0, 15)
+						Button.BackgroundColor3 = COL3RGB(30, 30, 30)
+						Button.BorderColor3 = COL3RGB(1, 1, 1)
+						Button.Position = UDIM2(0, 30, 0, 15)
+						Button.Size = UDIM2(0, 175, 0, 5)
 						Button.AutoButtonColor = false
 						Button.Font = Enum.Font.SourceSans
 						Button.Text = ""
-						Button.TextColor3 = Color3.fromRGB(0, 0, 0)
-						Button.TextSize = 14.000
-
+						Button.TextColor3 = COL3RGB(0, 0, 0)
+                        Button.TextSize = 14.000
+						
+						UIGradient2.Color = ColorSequence.new{ColorSequenceKeypoint.new(0, CLR), ColorSequenceKeypoint.new(1, COL3RGB(100, 100, 100))}
+						UIGradient2.Rotation = 90
+						UIGradient2.Parent = Button
+						
 						Frame.Parent = Button
-						Frame.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+						Frame.BackgroundColor3 = COL3RGB(255, 255, 255)
 						Frame.BorderSizePixel = 0
-						Frame.Size = UDim2.new(0.5, 0, 1, 0)
-
-						UIGradient.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(255, 255, 255)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(100, 100, 100))}
+						Frame.Size = UDIM2(0.5, 0, 1, 0)
+	
+						UIGradient.Color = ColorSequence.new{ColorSequenceKeypoint.new(0, CLR), ColorSequenceKeypoint.new(1, COL3RGB(100, 100, 100))}
 						UIGradient.Rotation = 90
 						UIGradient.Parent = Frame
-
+	
 						Value.Name = "Value"
-						Value.Parent = TextLabel
-						Value.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+						Value.Parent = Slider
+						Value.BackgroundColor3 = COL3RGB(255, 255, 255)
 						Value.BackgroundTransparency = 1.000
-						Value.Position = UDim2.new(1, 0, 0, 0)
-						Value.Size = UDim2.new(0, 20, 0, 15)
+						Value.Position = UDIM2(0, 150, 0, -1)
+						Value.Size = UDIM2(0, 55, 0, 15)
 						Value.Font = Enum.Font.Code
 						Value.Text = "50"
-						Value.TextColor3 = Color3.fromRGB(200, 200, 200)
+						Value.TextTransparency = 1.000
+						Value.TextColor3 = COL3RGB(200, 200, 200)
 						Value.TextSize = 14.000
-						Value.TextStrokeTransparency = 0.000
-						Value.TextXAlignment = Enum.TextXAlignment.Left
+						Value.TextXAlignment = Enum.TextXAlignment.Right
 						local min, max, default = data.min or 0, data.max or 100, data.default or 0
 						Element.value = {Slider = default}
 	
@@ -2859,44 +2821,33 @@ function library:New(name)
 					Section.Size = Section.Size + UDIM2(0,0,0,16)
 					Element.value = {Toggle = data.default and data.default.Toggle or false, Key, Type = "Always", Active = true}
 
-						local Toggle = IST("Frame")
-						local Button = IST("TextButton")
-						local backcolor = Instance.new("Frame")
-						local Color = IST("Frame")
-						local TextLabel = IST("TextLabel")
-	
-						Toggle.Name = "Toggle"
-						Toggle.Parent = Frame
-						Toggle.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-						Toggle.BackgroundTransparency = 1.000
-						Toggle.Position = UDim2.new(0, 0, 0.282037079, 0)
-						Toggle.Size = UDim2.new(1, 0, 0.0370370522, 15)
+					local Toggle = IST("Frame")
+					local Button = IST("TextButton")
+					local Color = IST("Frame")
+					local TextLabel = IST("TextLabel")
 
-						Button.Name = "Button"
-						Button.Parent = Toggle
-						Button.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-						Button.BackgroundTransparency = 1.000
-						Button.Size = UDim2.new(1, 0, 1, 0)
-						Button.Font = Enum.Font.GothamSemibold
-						Button.Text = ""
-						Button.TextColor3 = Color3.fromRGB(0, 0, 0)
-						Button.TextSize = 12.000
-	
-						backcolor.Name = "backcolor"
-						backcolor.Parent = Button_3
-						backcolor.AnchorPoint = Vector2.new(0, 0.5)
-						backcolor.BackgroundColor3 = Color3.fromRGB(40, 40, 40)
-						backcolor.BorderColor3 = Color3.fromRGB(0, 0, 0)
-						backcolor.Position = UDim2.new(0, 15, 0.5, 0)
-						backcolor.Size = UDim2.new(0, 12, 0, 12)
-						Color.Name = "Color"
-						Color.Parent = backcolor
-						Color.AnchorPoint = Vector2.new(0.5, 0.5)
-						Color.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-						Color.BorderColor3 = Color3.fromRGB(30, 30, 30)
-						Color.BorderSizePixel = 0
-						Color.Position = UDim2.new(0.5, 0, 0.5, 0)
-						Color.Size = UDim2.new(0, 10, 0, 10)
+					Toggle.Name = "Toggle"
+					Toggle.Parent = Inner
+					Toggle.BackgroundColor3 = COL3RGB(255, 255, 255)
+					Toggle.BackgroundTransparency = 1.000
+					Toggle.Size = UDIM2(1, 0, 0, 15)
+
+					Button.Name = "Button"
+					Button.Parent = Toggle
+					Button.BackgroundColor3 = COL3RGB(255, 255, 255)
+					Button.BackgroundTransparency = 1.000
+					Button.Size = UDIM2(1, 0, 1, 0)
+					Button.Font = Enum.Font.SourceSans
+					Button.Text = ""
+					Button.TextColor3 = COL3RGB(0, 0, 0)
+					Button.TextSize = 14.000
+
+					Color.Name = "Color"
+					Color.Parent = Button
+					Color.BackgroundColor3 = COL3RGB(15, 15, 15)
+					Color.BorderColor3 = COL3RGB(1, 1, 1)
+					Color.Position = UDIM2(0, 15, 0.5, -5)
+					Color.Size = UDIM2(0, 8, 0, 8)
 					local UIGradient = IST("UIGradient")
 					UIGradient.Color = ColorSequence.new{ColorSequenceKeypoint.new(0, CLR), ColorSequenceKeypoint.new(1, COL3RGB(100, 100, 100))}
 					UIGradient.Rotation = 90
@@ -3184,44 +3135,33 @@ function library:New(name)
 					Section.Size = Section.Size + UDIM2(0,0,0,16)
 					Element.value = {Toggle = data.default and data.default.Toggle or false}
 
-						local Toggle = IST("Frame")
-						local Button = IST("TextButton")
-						local backcolor = Instance.new("Frame")
-						local Color = IST("Frame")
-						local TextLabel = IST("TextLabel")
-	
-						Toggle.Name = "Toggle"
-						Toggle.Parent = Frame
-						Toggle.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-						Toggle.BackgroundTransparency = 1.000
-						Toggle.Position = UDim2.new(0, 0, 0.282037079, 0)
-						Toggle.Size = UDim2.new(1, 0, 0.0370370522, 15)
+					local Toggle = IST("Frame")
+					local Button = IST("TextButton")
+					local Color = IST("Frame")
+					local TextLabel = IST("TextLabel")
 
-						Button.Name = "Button"
-						Button.Parent = Toggle
-						Button.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-						Button.BackgroundTransparency = 1.000
-						Button.Size = UDim2.new(1, 0, 1, 0)
-						Button.Font = Enum.Font.GothamSemibold
-						Button.Text = ""
-						Button.TextColor3 = Color3.fromRGB(0, 0, 0)
-						Button.TextSize = 12.000
-	
-						backcolor.Name = "backcolor"
-						backcolor.Parent = Button_3
-						backcolor.AnchorPoint = Vector2.new(0, 0.5)
-						backcolor.BackgroundColor3 = Color3.fromRGB(40, 40, 40)
-						backcolor.BorderColor3 = Color3.fromRGB(0, 0, 0)
-						backcolor.Position = UDim2.new(0, 15, 0.5, 0)
-						backcolor.Size = UDim2.new(0, 12, 0, 12)
-						Color.Name = "Color"
-						Color.Parent = backcolor
-						Color.AnchorPoint = Vector2.new(0.5, 0.5)
-						Color.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-						Color.BorderColor3 = Color3.fromRGB(30, 30, 30)
-						Color.BorderSizePixel = 0
-						Color.Position = UDim2.new(0.5, 0, 0.5, 0)
-						Color.Size = UDim2.new(0, 10, 0, 10)
+					Toggle.Name = "Toggle"
+					Toggle.Parent = Inner
+					Toggle.BackgroundColor3 = COL3RGB(255, 255, 255)
+					Toggle.BackgroundTransparency = 1.000
+					Toggle.Size = UDIM2(1, 0, 0, 15)
+
+					Button.Name = "Button"
+					Button.Parent = Toggle
+					Button.BackgroundColor3 = COL3RGB(255, 255, 255)
+					Button.BackgroundTransparency = 1.000
+					Button.Size = UDIM2(1, 0, 1, 0)
+					Button.Font = Enum.Font.SourceSans
+					Button.Text = ""
+					Button.TextColor3 = COL3RGB(0, 0, 0)
+					Button.TextSize = 14.000
+
+					Color.Name = "Color"
+					Color.Parent = Button
+					Color.BackgroundColor3 = COL3RGB(15, 15, 15)
+					Color.BorderColor3 = COL3RGB(1, 1, 1)
+					Color.Position = UDIM2(0, 15, 0.5, -5)
+					Color.Size = UDIM2(0, 8, 0, 8)
 					local UIGradient = IST("UIGradient")
 					UIGradient.Color = ColorSequence.new{ColorSequenceKeypoint.new(0, CLR), ColorSequenceKeypoint.new(1, COL3RGB(100, 100, 100))}
 					UIGradient.Rotation = 90
@@ -3268,44 +3208,33 @@ function library:New(name)
 					Section.Size = Section.Size + UDIM2(0,0,0,16)
 					Element.value = {Toggle = data.default and data.default.Toggle or false, Color = data.default and data.default.Color or COL3RGB(255,255,255)}
 
-						local Toggle = IST("Frame")
-						local Button = IST("TextButton")
-						local backcolor = Instance.new("Frame")
-						local Color = IST("Frame")
-						local TextLabel = IST("TextLabel")
-	
-						Toggle.Name = "Toggle"
-						Toggle.Parent = Frame
-						Toggle.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-						Toggle.BackgroundTransparency = 1.000
-						Toggle.Position = UDim2.new(0, 0, 0.282037079, 0)
-						Toggle.Size = UDim2.new(1, 0, 0.0370370522, 15)
+					local Toggle = IST("Frame")
+					local Button = IST("TextButton")
+					local Color = IST("Frame")
+					local TextLabel = IST("TextLabel")
 
-						Button.Name = "Button"
-						Button.Parent = Toggle
-						Button.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-						Button.BackgroundTransparency = 1.000
-						Button.Size = UDim2.new(1, 0, 1, 0)
-						Button.Font = Enum.Font.GothamSemibold
-						Button.Text = ""
-						Button.TextColor3 = Color3.fromRGB(0, 0, 0)
-						Button.TextSize = 12.000
-	
-						backcolor.Name = "backcolor"
-						backcolor.Parent = Button_3
-						backcolor.AnchorPoint = Vector2.new(0, 0.5)
-						backcolor.BackgroundColor3 = Color3.fromRGB(40, 40, 40)
-						backcolor.BorderColor3 = Color3.fromRGB(0, 0, 0)
-						backcolor.Position = UDim2.new(0, 15, 0.5, 0)
-						backcolor.Size = UDim2.new(0, 12, 0, 12)
-						Color.Name = "Color"
-						Color.Parent = backcolor
-						Color.AnchorPoint = Vector2.new(0.5, 0.5)
-						Color.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-						Color.BorderColor3 = Color3.fromRGB(30, 30, 30)
-						Color.BorderSizePixel = 0
-						Color.Position = UDim2.new(0.5, 0, 0.5, 0)
-						Color.Size = UDim2.new(0, 10, 0, 10)
+					Toggle.Name = "Toggle"
+					Toggle.Parent = Inner
+					Toggle.BackgroundColor3 = COL3RGB(255, 255, 255)
+					Toggle.BackgroundTransparency = 1.000
+					Toggle.Size = UDIM2(1, 0, 0, 15)
+
+					Button.Name = "Button"
+					Button.Parent = Toggle
+					Button.BackgroundColor3 = COL3RGB(255, 255, 255)
+					Button.BackgroundTransparency = 1.000
+					Button.Size = UDIM2(1, 0, 1, 0)
+					Button.Font = Enum.Font.SourceSans
+					Button.Text = ""
+					Button.TextColor3 = COL3RGB(0, 0, 0)
+					Button.TextSize = 14.000
+
+					Color.Name = "Color"
+					Color.Parent = Button
+					Color.BackgroundColor3 = COL3RGB(15, 15, 15)
+					Color.BorderColor3 = COL3RGB(1, 1, 1)
+					Color.Position = UDIM2(0, 15, 0.5, -5)
+					Color.Size = UDIM2(0, 8, 0, 8)
 					local UIGradient = IST("UIGradient")
 					UIGradient.Color = ColorSequence.new{ColorSequenceKeypoint.new(0, CLR), ColorSequenceKeypoint.new(1, COL3RGB(100, 100, 100))}
 					UIGradient.Rotation = 90
@@ -3543,44 +3472,34 @@ function library:New(name)
 					Section.Size = Section.Size + UDIM2(0,0,0,16)
 					Element.value = {Toggle = data.default and data.default.Toggle or false, Color = data.default and data.default.Color or COL3RGB(255,255,255), Transparency = data.default and data.default.Transparency or 0}
 
-						local Toggle = IST("Frame")
-						local Button = IST("TextButton")
-						local backcolor = Instance.new("Frame")
-						local Color = IST("Frame")
-						local TextLabel = IST("TextLabel")
-	
-						Toggle.Name = "Toggle"
-						Toggle.Parent = Frame
-						Toggle.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-						Toggle.BackgroundTransparency = 1.000
-						Toggle.Position = UDim2.new(0, 0, 0.282037079, 0)
-						Toggle.Size = UDim2.new(1, 0, 0.0370370522, 15)
+					local Toggle = IST("Frame")
+					local Button = IST("TextButton")
+					local Color = IST("Frame")
+					local TextLabel = IST("TextLabel")
 
-						Button.Name = "Button"
-						Button.Parent = Toggle
-						Button.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-						Button.BackgroundTransparency = 1.000
-						Button.Size = UDim2.new(1, 0, 1, 0)
-						Button.Font = Enum.Font.GothamSemibold
-						Button.Text = ""
-						Button.TextColor3 = Color3.fromRGB(0, 0, 0)
-						Button.TextSize = 12.000
-	
-						backcolor.Name = "backcolor"
-						backcolor.Parent = Button_3
-						backcolor.AnchorPoint = Vector2.new(0, 0.5)
-						backcolor.BackgroundColor3 = Color3.fromRGB(40, 40, 40)
-						backcolor.BorderColor3 = Color3.fromRGB(0, 0, 0)
-						backcolor.Position = UDim2.new(0, 15, 0.5, 0)
-						backcolor.Size = UDim2.new(0, 12, 0, 12)
-						Color.Name = "Color"
-						Color.Parent = backcolor
-						Color.AnchorPoint = Vector2.new(0.5, 0.5)
-						Color.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-						Color.BorderColor3 = Color3.fromRGB(30, 30, 30)
-						Color.BorderSizePixel = 0
-						Color.Position = UDim2.new(0.5, 0, 0.5, 0)
-						Color.Size = UDim2.new(0, 10, 0, 10)
+					
+					Toggle.Name = "Toggle"
+					Toggle.Parent = Inner
+					Toggle.BackgroundColor3 = COL3RGB(255, 255, 255)
+					Toggle.BackgroundTransparency = 1.000
+					Toggle.Size = UDIM2(1, 0, 0, 15)
+
+					Button.Name = "Button"
+					Button.Parent = Toggle
+					Button.BackgroundColor3 = COL3RGB(255, 255, 255)
+					Button.BackgroundTransparency = 1.000
+					Button.Size = UDIM2(1, 0, 1, 0)
+					Button.Font = Enum.Font.SourceSans
+					Button.Text = ""
+					Button.TextColor3 = COL3RGB(0, 0, 0)
+					Button.TextSize = 14.000
+
+					Color.Name = "Color"
+					Color.Parent = Button
+					Color.BackgroundColor3 = COL3RGB(15, 15, 15)
+					Color.BorderColor3 = COL3RGB(1, 1, 1)
+					Color.Position = UDIM2(0, 15, 0.5, -5)
+					Color.Size = UDIM2(0, 8, 0, 8)
 					local UIGradient = IST("UIGradient")
 					UIGradient.Color = ColorSequence.new{ColorSequenceKeypoint.new(0, CLR), ColorSequenceKeypoint.new(1, COL3RGB(100, 100, 100))}
 					UIGradient.Rotation = 90
@@ -4101,64 +4020,69 @@ function library:New(name)
 
 					Section.Size = Section.Size + UDIM2(0,0,0,25)
 
-					local Slider = Instance.new("Frame")
-					local TextLabel = Instance.new("TextLabel")
-					local Button = Instance.new("TextButton")
-					local Frame = Instance.new("Frame")
-					local UIGradient = Instance.new("UIGradient")
-					local Value = Instance.new("TextLabel")
+					local Slider = IST("Frame")
+					local TextLabel = IST("TextLabel")
+					local Button = IST("TextButton")
+					local UIGradient2 = IST("UIGradient")
+					local Frame = IST("Frame")
+					local UIGradient = IST("UIGradient")
+					local Value = IST("TextLabel")
 
 					Slider.Name = "Slider"
 					Slider.Parent = Inner
-					Slider.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+					Slider.BackgroundColor3 = COL3RGB(255, 255, 255)
 					Slider.BackgroundTransparency = 1.000
-					Slider.Size = UDim2.new(1, 0, 0.0450000018, 25)
+					Slider.Position = UDIM2(0, 0, 0.653061211, 0)
+					Slider.Size = UDIM2(1, 0, 0, 25)
 
 					TextLabel.Parent = Slider
-					TextLabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+					TextLabel.BackgroundColor3 = COL3RGB(255, 255, 255)
 					TextLabel.BackgroundTransparency = 1.000
-					TextLabel.Position = UDim2.new(0, 32, 0, -2)
-					TextLabel.Size = UDim2.new(0, 29, 0, 15)
+					TextLabel.Position = UDIM2(0, 32, 0, -2)
+					TextLabel.Size = UDIM2(0, 100, 0, 15)
 					TextLabel.Font = Enum.Font.Code
-					TextLabel.Text = text..":"
-					TextLabel.TextColor3 = Color3.fromRGB(200, 200, 200)
+					TextLabel.Text = text
+					TextLabel.TextColor3 = COL3RGB(200, 200, 200)
 					TextLabel.TextSize = 14.000
-					TextLabel.TextStrokeTransparency = 0.000
 					TextLabel.TextXAlignment = Enum.TextXAlignment.Left
 
 					Button.Name = "Button"
 					Button.Parent = Slider
-					Button.BackgroundColor3 = Color3.fromRGB(30, 30, 30)
-					Button.BorderColor3 = Color3.fromRGB(1, 1, 1)
-					Button.Position = UDim2.new(0, 30, 0, 15)
-					Button.Size = UDim2.new(0, 175, 0, 15)
+					Button.BackgroundColor3 = COL3RGB(30, 30, 30)
+					Button.BorderColor3 = COL3RGB(1, 1, 1)
+					Button.Position = UDIM2(0, 30, 0, 15)
+					Button.Size = UDIM2(0, 175, 0, 5)
 					Button.AutoButtonColor = false
 					Button.Font = Enum.Font.SourceSans
 					Button.Text = ""
-					Button.TextColor3 = Color3.fromRGB(0, 0, 0)
+					Button.TextColor3 = COL3RGB(0, 0, 0)
 					Button.TextSize = 14.000
 
-					Frame.Parent = Button
-					Frame.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-					Frame.BorderSizePixel = 0
-					Frame.Size = UDim2.new(0.5, 0, 1, 0)
+				    UIGradient2.Color = ColorSequence.new{ColorSequenceKeypoint.new(0, CLR), ColorSequenceKeypoint.new(1, COL3RGB(100, 100, 100))}
+					UIGradient2.Rotation = 90
+					UIGradient2.Parent = Button
 
-					UIGradient.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(255, 255, 255)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(100, 100, 100))}
+					Frame.Parent = Button
+					Frame.BackgroundColor3 = COL3RGB(255, 255, 255)
+					Frame.BorderSizePixel = 0
+					Frame.Size = UDIM2(0.5, 0, 1, 0)
+
+					UIGradient.Color = ColorSequence.new{ColorSequenceKeypoint.new(0, CLR), ColorSequenceKeypoint.new(1, COL3RGB(100, 100, 100))}
 					UIGradient.Rotation = 90
 					UIGradient.Parent = Frame
 
 					Value.Name = "Value"
-					Value.Parent = TextLabel
-					Value.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+					Value.Parent = Slider
+					Value.BackgroundColor3 = COL3RGB(255, 255, 255)
 					Value.BackgroundTransparency = 1.000
-					Value.Position = UDim2.new(1, 0, 0, 0)
-					Value.Size = UDim2.new(0, 20, 0, 15)
+					Value.Position = UDIM2(0, 150, 0, -1)
+					Value.Size = UDIM2(0, 55, 0, 15)
 					Value.Font = Enum.Font.Code
 					Value.Text = "50"
-					Value.TextColor3 = Color3.fromRGB(200, 200, 200)
+					Value.TextTransparency = 1.000
+					Value.TextColor3 = COL3RGB(200, 200, 200)
 					Value.TextSize = 14.000
-					Value.TextStrokeTransparency = 0.000
-					Value.TextXAlignment = Enum.TextXAlignment.Left
+					Value.TextXAlignment = Enum.TextXAlignment.Right
 					local min, max, default = data.min or 0, data.max or 100, data.default or 0
 					Element.value = {Slider = default}
 
