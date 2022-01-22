@@ -1961,9 +1961,9 @@ function library:New(name)
 						Frame.BorderSizePixel = 0
 						Frame.Size = UDim2.new(0.5, 0, 1, 0)
 
-						UIGradient_2.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(255, 255, 255)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(100, 100, 100))}
-						UIGradient_2.Rotation = 90
-						UIGradient_2.Parent = Frame_2
+						UIGradient.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(255, 255, 255)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(100, 100, 100))}
+						UIGradient.Rotation = 90
+						UIGradient.Parent = Frame_2
 
 						Value.Name = "Value"
 						Value.Parent = TextLabel
