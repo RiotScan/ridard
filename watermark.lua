@@ -505,53 +505,48 @@ function library:New(name)
 	
 						Dropdown.Name = "Dropdown"
 						Dropdown.Parent = tab1
-						Dropdown.BackgroundColor3 = COL3RGB(255, 255, 255)
+						Dropdown.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 						Dropdown.BackgroundTransparency = 1.000
-						Dropdown.Position = UDIM2(0, 0, 0.255102038, 0)
-						Dropdown.Size = UDIM2(1, 0, 0, 39)
-	
+						Dropdown.Position = UDim2.new(0, 0, 0.255102038, 0)
+						Dropdown.Size = UDim2.new(1, 0, 0, 39)
+
 						Button.Name = "Button"
 						Button.Parent = Dropdown
-						Button.BackgroundColor3 = COL3RGB(30, 30, 30)
-						Button.BorderColor3 = COL3RGB(1, 1, 1)
-						Button.Position = UDIM2(0, 30, 0, 16)
-						Button.Size = UDIM2(0, 175, 0, 17)
+						Button.BackgroundColor3 = Color3.fromRGB(39, 39, 39)
+						Button.BorderColor3 = Color3.fromRGB(1, 1, 1)
+						Button.Position = UDim2.new(0, 30, 0, 16)
+						Button.Size = UDim2.new(0, 175, 0, 17)
 						Button.AutoButtonColor = false
 						Button.Font = Enum.Font.SourceSans
 						Button.Text = ""
-						Button.TextColor3 = COL3RGB(0, 0, 0)
+						Button.TextColor3 = Color3.fromRGB(0, 0, 0)
 						Button.TextSize = 14.000
 	
 						TextLabel.Parent = Button
-						TextLabel.BackgroundColor3 = COL3RGB(255, 255, 255)
+						TextLabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 						TextLabel.BackgroundTransparency = 1.000
-						TextLabel.BorderColor3 = COL3RGB(1, 1, 1)
-						TextLabel.Position = UDIM2(0, 5, 0, 0)
-						TextLabel.Size = UDIM2(-0.21714285, 208, 1, 0)
+						TextLabel.BorderColor3 = Color3.fromRGB(1, 1, 1)
+						TextLabel.Position = UDim2.new(0, 5, 0, 0)
+						TextLabel.Size = UDim2.new(-0.21714285, 208, 1, 0)
 						TextLabel.Font = Enum.Font.Code
 						TextLabel.Text = "..."
-						TextLabel.TextColor3 = COL3RGB(200, 200, 200)
+						TextLabel.TextColor3 = Color3.fromRGB(200, 200, 200)
 						TextLabel.TextSize = 14.000
 						TextLabel.TextXAlignment = Enum.TextXAlignment.Left
 	
 						local abcd = TextLabel
 	
 						Drop.Name = "Drop"
-						Drop.Parent = Button
+						Drop.Parent = Button_2
 						Drop.Active = true
-						Drop.BackgroundColor3 = COL3RGB(30, 30, 30)
-						Drop.BorderColor3 = COL3RGB(1, 1, 1)
-						Drop.Position = UDIM2(0, 0, 1, 1)
-						Drop.Size = UDIM2(1, 0, 0, 20)
+						Drop.BackgroundColor3 = Color3.fromRGB(10, 10, 10)
+						Drop.BorderColor3 = Color3.fromRGB(0, 0, 0)
+						Drop.Position = UDim2.new(0, 0, 1, 1)
+						Drop.Size = UDim2.new(1, 0, 0, 20)
 						Drop.Visible = false
-						Drop.BottomImage = "http://www.roblox.com/asset/?id=6724808282"
-						Drop.CanvasSize = UDIM2(0, 0, 0, 0)
-						Drop.ScrollBarThickness = 4
-						Drop.TopImage = "http://www.roblox.com/asset/?id=6724808282"
-						Drop.MidImage = "http://www.roblox.com/asset/?id=6724808282"
-						Drop.AutomaticCanvasSize = "Y"
 						Drop.ZIndex = 5
-						Drop.ScrollBarImageColor3 = COL3RGB(255, 255, 255)
+						Drop.CanvasSize = UDim2.new(0, 0, 0, 0)
+						Drop.ScrollBarThickness = 3
 	
 						UIListLayout.Parent = Drop
 						UIListLayout.HorizontalAlignment = Enum.HorizontalAlignment.Center
@@ -737,46 +732,59 @@ function library:New(name)
 	
 						local Toggle = IST("Frame")
 						local Button = IST("TextButton")
+						local backcolor = Instance.new("Frame")
 						local Color = IST("Frame")
 						local TextLabel = IST("TextLabel")
 	
 						Toggle.Name = "Toggle"
-						Toggle.Parent = tab1
-						Toggle.BackgroundColor3 = COL3RGB(255, 255, 255)
+						Toggle.Parent = Frame
+						Toggle.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 						Toggle.BackgroundTransparency = 1.000
-						Toggle.Size = UDIM2(1, 0, 0, 15)
-	
+						Toggle.Position = UDim2.new(0, 0, 0.282037079, 0)
+						Toggle.Size = UDim2.new(1, 0, 0.0370370522, 15)
+
 						Button.Name = "Button"
 						Button.Parent = Toggle
-						Button.BackgroundColor3 = COL3RGB(255, 255, 255)
+						Button.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 						Button.BackgroundTransparency = 1.000
-						Button.Size = UDIM2(1, 0, 1, 0)
-						Button.Font = Enum.Font.SourceSans
+						Button.Size = UDim2.new(1, 0, 1, 0)
+						Button.Font = Enum.Font.GothamSemibold
 						Button.Text = ""
-						Button.TextColor3 = COL3RGB(0, 0, 0)
-						Button.TextSize = 14.000
+						Button.TextColor3 = Color3.fromRGB(0, 0, 0)
+						Button.TextSize = 12.000
 	
+						backcolor.Name = "backcolor"
+						backcolor.Parent = Button_3
+						backcolor.AnchorPoint = Vector2.new(0, 0.5)
+						backcolor.BackgroundColor3 = Color3.fromRGB(40, 40, 40)
+						backcolor.BorderColor3 = Color3.fromRGB(0, 0, 0)
+						backcolor.Position = UDim2.new(0, 15, 0.5, 0)
+						backcolor.Size = UDim2.new(0, 12, 0, 12)
 						Color.Name = "Color"
-						Color.Parent = Button
-						Color.BackgroundColor3 = COL3RGB(15, 15, 15)
-						Color.BorderColor3 = COL3RGB(1, 1, 1)
-						Color.Position = UDIM2(0, 15, 0.5, -5)
-						Color.Size = UDIM2(0, 8, 0, 8)
+						Color.Parent = backcolor
+						Color.AnchorPoint = Vector2.new(0.5, 0.5)
+						Color.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+						Color.BorderColor3 = Color3.fromRGB(30, 30, 30)
+						Color.BorderSizePixel = 0
+						Color.Position = UDim2.new(0.5, 0, 0.5, 0)
+						Color.Size = UDim2.new(0, 10, 0, 10)
 						local UIGradient = IST("UIGradient")
-						UIGradient.Color = ColorSequence.new{ColorSequenceKeypoint.new(0, CLR), ColorSequenceKeypoint.new(1, COL3RGB(100, 100, 100))}
-						UIGradient.Rotation = 90
-						UIGradient.Parent = Color
+						UIGradient_6.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(255, 255, 255)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(100, 100, 100))}
+						UIGradient_6.Rotation = 90
+						UIGradient_6.Parent = Color
 						local binding = false
-						TextLabel.Parent = Button
-						TextLabel.BackgroundColor3 = COL3RGB(255, 255, 255)
-						TextLabel.BackgroundTransparency = 1.000
-						TextLabel.Position = UDIM2(0, 32, 0, -1)
-						TextLabel.Size = UDIM2(0.111913361, 208, 1, 0)
-						TextLabel.Font = Enum.Font.Code
-						TextLabel.Text = text
-						TextLabel.TextColor3 = COL3RGB(200, 200, 200)
-						TextLabel.TextSize = 14.000
-						TextLabel.TextXAlignment = Enum.TextXAlignment.Left
+						TextLabel_6.Parent = Button_3
+						TextLabel_6.AnchorPoint = Vector2.new(0, 0.5)
+						TextLabel_6.BackgroundColor3 = Color3.fromRGB(223, 190, 117)
+						TextLabel_6.BackgroundTransparency = 1.000
+						TextLabel_6.Position = UDim2.new(0, 32, 0.5, 0)
+						TextLabel_6.Size = UDim2.new(0.111913361, 208, 1, 0)
+						TextLabel_6.Font = Enum.Font.Code
+						TextLabel_6.Text = text
+						TextLabel_6.TextColor3 = Color3.fromRGB(200, 200, 200)
+						TextLabel_6.TextSize = 14.000
+						TextLabel_6.TextStrokeTransparency = 0.000
+						TextLabel_6.TextXAlignment = Enum.TextXAlignment.Left
 	
 						local function update()
 							if Element.value.Toggle then
@@ -816,7 +824,7 @@ function library:New(name)
 							Keybind.BackgroundColor3 = COL3RGB(30, 30, 30)
 							Keybind.BorderColor3 = COL3RGB(1, 1, 1)
 							Keybind.Position = UDIM2(0, 270, 0.5, -6)
-							Keybind.Text = "NONE"
+							Keybind.Text = "[...]"
 							Keybind.Size = UDIM2(0, 43, 0, 12)
 							Keybind.Size = UDIM2(0,txt:GetTextSize("NONE", 14, Enum.Font.Code, Vc2(700, 12)).X + 5,0, 12)
 							Keybind.AutoButtonColor = false
@@ -1043,45 +1051,60 @@ function library:New(name)
 	
 						local Toggle = IST("Frame")
 						local Button = IST("TextButton")
+						local backcolor = Instance.new("Frame")
 						local Color = IST("Frame")
 						local TextLabel = IST("TextLabel")
 	
 						Toggle.Name = "Toggle"
-						Toggle.Parent = tab1
-						Toggle.BackgroundColor3 = COL3RGB(255, 255, 255)
+						Toggle.Parent = Frame
+						Toggle.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 						Toggle.BackgroundTransparency = 1.000
-						Toggle.Size = UDIM2(1, 0, 0, 15)
-	
+						Toggle.Position = UDim2.new(0, 0, 0.282037079, 0)
+						Toggle.Size = UDim2.new(1, 0, 0.0370370522, 15)
+
 						Button.Name = "Button"
 						Button.Parent = Toggle
-						Button.BackgroundColor3 = COL3RGB(255, 255, 255)
+						Button.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 						Button.BackgroundTransparency = 1.000
-						Button.Size = UDIM2(1, 0, 1, 0)
-						Button.Font = Enum.Font.SourceSans
+						Button.Size = UDim2.new(1, 0, 1, 0)
+						Button.Font = Enum.Font.GothamSemibold
 						Button.Text = ""
-						Button.TextColor3 = COL3RGB(0, 0, 0)
-						Button.TextSize = 14.000
+						Button.TextColor3 = Color3.fromRGB(0, 0, 0)
+						Button.TextSize = 12.000
 	
+						backcolor.Name = "backcolor"
+						backcolor.Parent = Button_3
+						backcolor.AnchorPoint = Vector2.new(0, 0.5)
+						backcolor.BackgroundColor3 = Color3.fromRGB(40, 40, 40)
+						backcolor.BorderColor3 = Color3.fromRGB(0, 0, 0)
+						backcolor.Position = UDim2.new(0, 15, 0.5, 0)
+						backcolor.Size = UDim2.new(0, 12, 0, 12)
 						Color.Name = "Color"
-						Color.Parent = Button
-						Color.BackgroundColor3 = COL3RGB(15, 15, 15)
-						Color.BorderColor3 = COL3RGB(1, 1, 1)
-						Color.Position = UDIM2(0, 15, 0.5, -5)
-						Color.Size = UDIM2(0, 8, 0, 8)
+						Color.Parent = backcolor
+						Color.AnchorPoint = Vector2.new(0.5, 0.5)
+						Color.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+						Color.BorderColor3 = Color3.fromRGB(30, 30, 30)
+						Color.BorderSizePixel = 0
+						Color.Position = UDim2.new(0.5, 0, 0.5, 0)
+						Color.Size = UDim2.new(0, 10, 0, 10)
+						
 						local UIGradient = IST("UIGradient")
-						UIGradient.Color = ColorSequence.new{ColorSequenceKeypoint.new(0, CLR), ColorSequenceKeypoint.new(1, COL3RGB(100, 100, 100))}
-						UIGradient.Rotation = 90
-						UIGradient.Parent = Color
-						TextLabel.Parent = Button
-						TextLabel.BackgroundColor3 = COL3RGB(255, 255, 255)
-						TextLabel.BackgroundTransparency = 1.000
-						TextLabel.Position = UDIM2(0, 32, 0, -1)
-						TextLabel.Size = UDIM2(0.111913361, 208, 1, 0)
-						TextLabel.Font = Enum.Font.Code
-						TextLabel.Text = text
-						TextLabel.TextColor3 = COL3RGB(200, 200, 200)
-						TextLabel.TextSize = 14.000
-						TextLabel.TextXAlignment = Enum.TextXAlignment.Left
+						UIGradient_6.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(255, 255, 255)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(100, 100, 100))}
+						UIGradient_6.Rotation = 90
+						UIGradient_6.Parent = Color
+
+						TextLabel_6.Parent = Button_3
+						TextLabel_6.AnchorPoint = Vector2.new(0, 0.5)
+						TextLabel_6.BackgroundColor3 = Color3.fromRGB(223, 190, 117)
+						TextLabel_6.BackgroundTransparency = 1.000
+						TextLabel_6.Position = UDim2.new(0, 32, 0.5, 0)
+						TextLabel_6.Size = UDim2.new(0.111913361, 208, 1, 0)
+						TextLabel_6.Font = Enum.Font.Code
+						TextLabel_6.Text = text
+						TextLabel_6.TextColor3 = Color3.fromRGB(200, 200, 200)
+						TextLabel_6.TextSize = 14.000
+						TextLabel_6.TextStrokeTransparency = 0.000
+						TextLabel_6.TextXAlignment = Enum.TextXAlignment.Left
 	
 						local function update()
 							if Element.value.Toggle then
@@ -1116,45 +1139,60 @@ function library:New(name)
 	
 						local Toggle = IST("Frame")
 						local Button = IST("TextButton")
+						local backcolor = Instance.new("Frame")
 						local Color = IST("Frame")
 						local TextLabel = IST("TextLabel")
 	
 						Toggle.Name = "Toggle"
-						Toggle.Parent = tab1
-						Toggle.BackgroundColor3 = COL3RGB(255, 255, 255)
+						Toggle.Parent = Frame
+						Toggle.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 						Toggle.BackgroundTransparency = 1.000
-						Toggle.Size = UDIM2(1, 0, 0, 15)
-	
+						Toggle.Position = UDim2.new(0, 0, 0.282037079, 0)
+						Toggle.Size = UDim2.new(1, 0, 0.0370370522, 15)
+
 						Button.Name = "Button"
 						Button.Parent = Toggle
-						Button.BackgroundColor3 = COL3RGB(255, 255, 255)
+						Button.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 						Button.BackgroundTransparency = 1.000
-						Button.Size = UDIM2(1, 0, 1, 0)
-						Button.Font = Enum.Font.SourceSans
+						Button.Size = UDim2.new(1, 0, 1, 0)
+						Button.Font = Enum.Font.GothamSemibold
 						Button.Text = ""
-						Button.TextColor3 = COL3RGB(0, 0, 0)
-						Button.TextSize = 14.000
+						Button.TextColor3 = Color3.fromRGB(0, 0, 0)
+						Button.TextSize = 12.000
 	
+						backcolor.Name = "backcolor"
+						backcolor.Parent = Button_3
+						backcolor.AnchorPoint = Vector2.new(0, 0.5)
+						backcolor.BackgroundColor3 = Color3.fromRGB(40, 40, 40)
+						backcolor.BorderColor3 = Color3.fromRGB(0, 0, 0)
+						backcolor.Position = UDim2.new(0, 15, 0.5, 0)
+						backcolor.Size = UDim2.new(0, 12, 0, 12)
 						Color.Name = "Color"
-						Color.Parent = Button
-						Color.BackgroundColor3 = COL3RGB(15, 15, 15)
-						Color.BorderColor3 = COL3RGB(1, 1, 1)
-						Color.Position = UDIM2(0, 15, 0.5, -5)
-						Color.Size = UDIM2(0, 8, 0, 8)
+						Color.Parent = backcolor
+						Color.AnchorPoint = Vector2.new(0.5, 0.5)
+						Color.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+						Color.BorderColor3 = Color3.fromRGB(30, 30, 30)
+						Color.BorderSizePixel = 0
+						Color.Position = UDim2.new(0.5, 0, 0.5, 0)
+						Color.Size = UDim2.new(0, 10, 0, 10)
+						
 						local UIGradient = IST("UIGradient")
-						UIGradient.Color = ColorSequence.new{ColorSequenceKeypoint.new(0, CLR), ColorSequenceKeypoint.new(1, COL3RGB(100, 100, 100))}
-						UIGradient.Rotation = 90
-						UIGradient.Parent = Color
-						TextLabel.Parent = Button
-						TextLabel.BackgroundColor3 = COL3RGB(255, 255, 255)
-						TextLabel.BackgroundTransparency = 1.000
-						TextLabel.Position = UDIM2(0, 32, 0, -1)
-						TextLabel.Size = UDIM2(0.111913361, 208, 1, 0)
-						TextLabel.Font = Enum.Font.Code
-						TextLabel.Text = text
-						TextLabel.TextColor3 = COL3RGB(200, 200, 200)
-						TextLabel.TextSize = 14.000
-						TextLabel.TextXAlignment = Enum.TextXAlignment.Left
+						UIGradient_6.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(255, 255, 255)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(100, 100, 100))}
+						UIGradient_6.Rotation = 90
+						UIGradient_6.Parent = Color
+
+						TextLabel_6.Parent = Button_3
+						TextLabel_6.AnchorPoint = Vector2.new(0, 0.5)
+						TextLabel_6.BackgroundColor3 = Color3.fromRGB(223, 190, 117)
+						TextLabel_6.BackgroundTransparency = 1.000
+						TextLabel_6.Position = UDim2.new(0, 32, 0.5, 0)
+						TextLabel_6.Size = UDim2.new(0.111913361, 208, 1, 0)
+						TextLabel_6.Font = Enum.Font.Code
+						TextLabel_6.Text = text
+						TextLabel_6.TextColor3 = Color3.fromRGB(200, 200, 200)
+						TextLabel_6.TextSize = 14.000
+						TextLabel_6.TextStrokeTransparency = 0.000
+						TextLabel_6.TextXAlignment = Enum.TextXAlignment.Left
 	
 						local function update()
 							if Element.value.Toggle then
@@ -1178,18 +1216,23 @@ function library:New(name)
 						local Huedrag = IST("Frame")
 	
 						ColorP.Name = "ColorP"
-						ColorP.Parent = Button
-						ColorP.AnchorPoint = Vc2(1, 0)
-						ColorP.BackgroundColor3 = COL3RGB(255, 0, 0)
-						ColorP.BorderColor3 = COL3RGB(1, 1, 1)
-						ColorP.Position = UDIM2(0, 270, 0.5, -4)
-						ColorP.Size = UDIM2(0, 18, 0, 8)
+						ColorP.Parent = Color_3
+						ColorP.AnchorPoint = Vector2.new(1, 0)
+						ColorP.BackgroundColor3 = Color3.fromRGB(255, 0, 0)
+						ColorP.BorderColor3 = Color3.fromRGB(27, 27, 35)
+						ColorP.Position = UDim2.new(0, 270, 0.5, -4)
+						ColorP.Size = UDim2.new(0, 18, 0, 8)
 						ColorP.AutoButtonColor = false
-						ColorP.Font = Enum.Font.Code
+						ColorP.Font = Enum.Font.GothamSemibold
 						ColorP.Text = ""
-						ColorP.TextColor3 = COL3RGB(200, 200, 200)
-						ColorP.TextSize = 14.000
-	
+						ColorP.TextColor3 = Color3.fromRGB(200, 200, 200)
+						ColorP.TextSize = 12.000
+						
+						local UIGradient = Instance.new("UIGradient")
+						UIGradient_9.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(255, 255, 255)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(100, 100, 100))}
+						UIGradient_9.Rotation = 90
+						UIGradient_9.Parent = ColorP
+						
 						Frame.Parent = ColorP
 						Frame.BackgroundColor3 = COL3RGB(30, 30, 30)
 						Frame.BorderColor3 = COL3RGB(1, 1, 1)
@@ -1377,45 +1420,60 @@ function library:New(name)
 	
 						local Toggle = IST("Frame")
 						local Button = IST("TextButton")
+						local backcolor = Instance.new("Frame")
 						local Color = IST("Frame")
 						local TextLabel = IST("TextLabel")
 	
 						Toggle.Name = "Toggle"
-						Toggle.Parent = tab1
-						Toggle.BackgroundColor3 = COL3RGB(255, 255, 255)
+						Toggle.Parent = Frame
+						Toggle.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 						Toggle.BackgroundTransparency = 1.000
-						Toggle.Size = UDIM2(1, 0, 0, 15)
-	
+						Toggle.Position = UDim2.new(0, 0, 0.282037079, 0)
+						Toggle.Size = UDim2.new(1, 0, 0.0370370522, 15)
+
 						Button.Name = "Button"
 						Button.Parent = Toggle
-						Button.BackgroundColor3 = COL3RGB(255, 255, 255)
+						Button.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 						Button.BackgroundTransparency = 1.000
-						Button.Size = UDIM2(1, 0, 1, 0)
-						Button.Font = Enum.Font.SourceSans
+						Button.Size = UDim2.new(1, 0, 1, 0)
+						Button.Font = Enum.Font.GothamSemibold
 						Button.Text = ""
-						Button.TextColor3 = COL3RGB(0, 0, 0)
-						Button.TextSize = 14.000
+						Button.TextColor3 = Color3.fromRGB(0, 0, 0)
+						Button.TextSize = 12.000
 	
+						backcolor.Name = "backcolor"
+						backcolor.Parent = Button_3
+						backcolor.AnchorPoint = Vector2.new(0, 0.5)
+						backcolor.BackgroundColor3 = Color3.fromRGB(40, 40, 40)
+						backcolor.BorderColor3 = Color3.fromRGB(0, 0, 0)
+						backcolor.Position = UDim2.new(0, 15, 0.5, 0)
+						backcolor.Size = UDim2.new(0, 12, 0, 12)
 						Color.Name = "Color"
-						Color.Parent = Button
-						Color.BackgroundColor3 = COL3RGB(15, 15, 15)
-						Color.BorderColor3 = COL3RGB(1, 1, 1)
-						Color.Position = UDIM2(0, 15, 0.5, -5)
-						Color.Size = UDIM2(0, 8, 0, 8)
+						Color.Parent = backcolor
+						Color.AnchorPoint = Vector2.new(0.5, 0.5)
+						Color.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+						Color.BorderColor3 = Color3.fromRGB(30, 30, 30)
+						Color.BorderSizePixel = 0
+						Color.Position = UDim2.new(0.5, 0, 0.5, 0)
+						Color.Size = UDim2.new(0, 10, 0, 10)
+						
 						local UIGradient = IST("UIGradient")
-						UIGradient.Color = ColorSequence.new{ColorSequenceKeypoint.new(0, CLR), ColorSequenceKeypoint.new(1, COL3RGB(100, 100, 100))}
-						UIGradient.Rotation = 90
-						UIGradient.Parent = Color
-						TextLabel.Parent = Button
-						TextLabel.BackgroundColor3 = COL3RGB(255, 255, 255)
-						TextLabel.BackgroundTransparency = 1.000
-						TextLabel.Position = UDIM2(0, 32, 0, -1)
-						TextLabel.Size = UDIM2(0.111913361, 208, 1, 0)
-						TextLabel.Font = Enum.Font.Code
-						TextLabel.Text = text
-						TextLabel.TextColor3 = COL3RGB(200, 200, 200)
-						TextLabel.TextSize = 14.000
-						TextLabel.TextXAlignment = Enum.TextXAlignment.Left
+						UIGradient_6.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(255, 255, 255)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(100, 100, 100))}
+						UIGradient_6.Rotation = 90
+						UIGradient_6.Parent = Color
+
+						TextLabel_6.Parent = Button_3
+						TextLabel_6.AnchorPoint = Vector2.new(0, 0.5)
+						TextLabel_6.BackgroundColor3 = Color3.fromRGB(223, 190, 117)
+						TextLabel_6.BackgroundTransparency = 1.000
+						TextLabel_6.Position = UDim2.new(0, 32, 0.5, 0)
+						TextLabel_6.Size = UDim2.new(0.111913361, 208, 1, 0)
+						TextLabel_6.Font = Enum.Font.Code
+						TextLabel_6.Text = text
+						TextLabel_6.TextColor3 = Color3.fromRGB(200, 200, 200)
+						TextLabel_6.TextSize = 14.000
+						TextLabel_6.TextStrokeTransparency = 0.000
+						TextLabel_6.TextXAlignment = Enum.TextXAlignment.Left
 	
 						local function update()
 							if Element.value.Toggle then
@@ -1450,6 +1508,11 @@ function library:New(name)
 						ColorP.Text = ""
 						ColorP.TextColor3 = COL3RGB(200, 200, 200)
 						ColorP.TextSize = 14.000
+						local UIGradient = Instance.new("UIGradient")
+						
+						UIGradient.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(255, 255, 255)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(100, 100, 100))}
+						UIGradient.Rotation = 90
+						UIGradient.Parent = ColorP
 	
 						Frame.Parent = ColorP
 						Frame.BackgroundColor3 = COL3RGB(30, 30, 30)
@@ -1875,69 +1938,64 @@ function library:New(name)
 	
 						tabsize = tabsize + UDIM2(0,0,0,25)
 	
-						local Slider = IST("Frame")
-						local TextLabel = IST("TextLabel")
-						local Button = IST("TextButton")
-						local UIGradient2 = IST("UIGradient")
-						local Frame = IST("Frame")
-						local UIGradient = IST("UIGradient")
-						local Value = IST("TextLabel")
-	
+						local Slider = Instance.new("Frame")
+						local TextLabel = Instance.new("TextLabel")
+						local Button = Instance.new("TextButton")
+						local Frame = Instance.new("Frame")
+						local UIGradient = Instance.new("UIGradient")
+						local Value = Instance.new("TextLabel")
+
 						Slider.Name = "Slider"
-						Slider.Parent = tab1
-						Slider.BackgroundColor3 = COL3RGB(255, 255, 255)
+						Slider.Parent = Inner
+						Slider.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 						Slider.BackgroundTransparency = 1.000
-						Slider.Position = UDIM2(0, 0, 0.653061211, 0)
-						Slider.Size = UDIM2(1, 0, 0, 25)
-	
+						Slider.Size = UDim2.new(1, 0, 0.0450000018, 25)
+
 						TextLabel.Parent = Slider
-						TextLabel.BackgroundColor3 = COL3RGB(255, 255, 255)
+						TextLabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 						TextLabel.BackgroundTransparency = 1.000
-						TextLabel.Position = UDIM2(0, 32, 0, -2)
-						TextLabel.Size = UDIM2(0, 100, 0, 15)
+						TextLabel.Position = UDim2.new(0, 32, 0, -2)
+						TextLabel.Size = UDim2.new(0, 29, 0, 15)
 						TextLabel.Font = Enum.Font.Code
-						TextLabel.Text = text
-						TextLabel.TextColor3 = COL3RGB(200, 200, 200)
+						TextLabel.Text = text..":"
+						TextLabel.TextColor3 = Color3.fromRGB(200, 200, 200)
 						TextLabel.TextSize = 14.000
+						TextLabel.TextStrokeTransparency = 0.000
 						TextLabel.TextXAlignment = Enum.TextXAlignment.Left
-	
+
 						Button.Name = "Button"
 						Button.Parent = Slider
-						Button.BackgroundColor3 = COL3RGB(30, 30, 30)
-						Button.BorderColor3 = COL3RGB(1, 1, 1)
-						Button.Position = UDIM2(0, 30, 0, 15)
-						Button.Size = UDIM2(0, 175, 0, 5)
+						Button.BackgroundColor3 = Color3.fromRGB(30, 30, 30)
+						Button.BorderColor3 = Color3.fromRGB(1, 1, 1)
+						Button.Position = UDim2.new(0, 30, 0, 15)
+						Button.Size = UDim2.new(0, 175, 0, 15)
 						Button.AutoButtonColor = false
 						Button.Font = Enum.Font.SourceSans
 						Button.Text = ""
-						Button.TextColor3 = COL3RGB(0, 0, 0)
-                        Button.TextSize = 14.000
-						
-						UIGradient2.Color = ColorSequence.new{ColorSequenceKeypoint.new(0, CLR), ColorSequenceKeypoint.new(1, COL3RGB(100, 100, 100))}
-						UIGradient2.Rotation = 90
-						UIGradient2.Parent = Button
-						
+						Button.TextColor3 = Color3.fromRGB(0, 0, 0)
+						Button.TextSize = 14.000
+
 						Frame.Parent = Button
-						Frame.BackgroundColor3 = COL3RGB(255, 255, 255)
+						Frame.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 						Frame.BorderSizePixel = 0
-						Frame.Size = UDIM2(0.5, 0, 1, 0)
-	
-						UIGradient.Color = ColorSequence.new{ColorSequenceKeypoint.new(0, CLR), ColorSequenceKeypoint.new(1, COL3RGB(100, 100, 100))}
-						UIGradient.Rotation = 90
-						UIGradient.Parent = Frame
-	
+						Frame.Size = UDim2.new(0.5, 0, 1, 0)
+
+						UIGradient_2.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(255, 255, 255)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(100, 100, 100))}
+						UIGradient_2.Rotation = 90
+						UIGradient_2.Parent = Frame_2
+
 						Value.Name = "Value"
-						Value.Parent = Slider
-						Value.BackgroundColor3 = COL3RGB(255, 255, 255)
+						Value.Parent = TextLabel
+						Value.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 						Value.BackgroundTransparency = 1.000
-						Value.Position = UDIM2(0, 150, 0, -1)
-						Value.Size = UDIM2(0, 55, 0, 15)
+						Value.Position = UDim2.new(1, 0, 0, 0)
+						Value.Size = UDim2.new(0, 20, 0, 15)
 						Value.Font = Enum.Font.Code
 						Value.Text = "50"
-						Value.TextTransparency = 1.000
-						Value.TextColor3 = COL3RGB(200, 200, 200)
+						Value.TextColor3 = Color3.fromRGB(200, 200, 200)
 						Value.TextSize = 14.000
-						Value.TextXAlignment = Enum.TextXAlignment.Right
+						Value.TextStrokeTransparency = 0.000
+						Value.TextXAlignment = Enum.TextXAlignment.Left
 						local min, max, default = data.min or 0, data.max or 100, data.default or 0
 						Element.value = {Slider = default}
 	
@@ -3134,47 +3192,62 @@ function library:New(name)
 					Section.Size = Section.Size + UDIM2(0,0,0,16)
 					Element.value = {Toggle = data.default and data.default.Toggle or false}
 
-					local Toggle = IST("Frame")
-					local Button = IST("TextButton")
-					local Color = IST("Frame")
-					local TextLabel = IST("TextLabel")
+						local Toggle = IST("Frame")
+						local Button = IST("TextButton")
+						local backcolor = Instance.new("Frame")
+						local Color = IST("Frame")
+						local TextLabel = IST("TextLabel")
+	
+						Toggle.Name = "Toggle"
+						Toggle.Parent = Frame
+						Toggle.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+						Toggle.BackgroundTransparency = 1.000
+						Toggle.Position = UDim2.new(0, 0, 0.282037079, 0)
+						Toggle.Size = UDim2.new(1, 0, 0.0370370522, 15)
 
-					Toggle.Name = "Toggle"
-					Toggle.Parent = Inner
-					Toggle.BackgroundColor3 = COL3RGB(255, 255, 255)
-					Toggle.BackgroundTransparency = 1.000
-					Toggle.Size = UDIM2(1, 0, 0, 15)
+						Button.Name = "Button"
+						Button.Parent = Toggle
+						Button.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+						Button.BackgroundTransparency = 1.000
+						Button.Size = UDim2.new(1, 0, 1, 0)
+						Button.Font = Enum.Font.GothamSemibold
+						Button.Text = ""
+						Button.TextColor3 = Color3.fromRGB(0, 0, 0)
+						Button.TextSize = 12.000
+	
+						backcolor.Name = "backcolor"
+						backcolor.Parent = Button_3
+						backcolor.AnchorPoint = Vector2.new(0, 0.5)
+						backcolor.BackgroundColor3 = Color3.fromRGB(40, 40, 40)
+						backcolor.BorderColor3 = Color3.fromRGB(0, 0, 0)
+						backcolor.Position = UDim2.new(0, 15, 0.5, 0)
+						backcolor.Size = UDim2.new(0, 12, 0, 12)
+						Color.Name = "Color"
+						Color.Parent = backcolor
+						Color.AnchorPoint = Vector2.new(0.5, 0.5)
+						Color.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+						Color.BorderColor3 = Color3.fromRGB(30, 30, 30)
+						Color.BorderSizePixel = 0
+						Color.Position = UDim2.new(0.5, 0, 0.5, 0)
+						Color.Size = UDim2.new(0, 10, 0, 10)
+						
+						local UIGradient = IST("UIGradient")
+						UIGradient_6.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(255, 255, 255)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(100, 100, 100))}
+						UIGradient_6.Rotation = 90
+						UIGradient_6.Parent = Color
 
-					Button.Name = "Button"
-					Button.Parent = Toggle
-					Button.BackgroundColor3 = COL3RGB(255, 255, 255)
-					Button.BackgroundTransparency = 1.000
-					Button.Size = UDIM2(1, 0, 1, 0)
-					Button.Font = Enum.Font.SourceSans
-					Button.Text = ""
-					Button.TextColor3 = COL3RGB(0, 0, 0)
-					Button.TextSize = 14.000
-
-					Color.Name = "Color"
-					Color.Parent = Button
-					Color.BackgroundColor3 = COL3RGB(15, 15, 15)
-					Color.BorderColor3 = COL3RGB(1, 1, 1)
-					Color.Position = UDIM2(0, 15, 0.5, -5)
-					Color.Size = UDIM2(0, 8, 0, 8)
-					local UIGradient = IST("UIGradient")
-					UIGradient.Color = ColorSequence.new{ColorSequenceKeypoint.new(0, CLR), ColorSequenceKeypoint.new(1, COL3RGB(100, 100, 100))}
-					UIGradient.Rotation = 90
-					UIGradient.Parent = Color
-					TextLabel.Parent = Button
-					TextLabel.BackgroundColor3 = COL3RGB(255, 255, 255)
-					TextLabel.BackgroundTransparency = 1.000
-					TextLabel.Position = UDIM2(0, 32, 0, -1)
-					TextLabel.Size = UDIM2(0.111913361, 208, 1, 0)
-					TextLabel.Font = Enum.Font.Code
-					TextLabel.Text = text
-					TextLabel.TextColor3 = COL3RGB(200, 200, 200)
-					TextLabel.TextSize = 14.000
-					TextLabel.TextXAlignment = Enum.TextXAlignment.Left
+						TextLabel_6.Parent = Button_3
+						TextLabel_6.AnchorPoint = Vector2.new(0, 0.5)
+						TextLabel_6.BackgroundColor3 = Color3.fromRGB(223, 190, 117)
+						TextLabel_6.BackgroundTransparency = 1.000
+						TextLabel_6.Position = UDim2.new(0, 32, 0.5, 0)
+						TextLabel_6.Size = UDim2.new(0.111913361, 208, 1, 0)
+						TextLabel_6.Font = Enum.Font.Code
+						TextLabel_6.Text = text
+						TextLabel_6.TextColor3 = Color3.fromRGB(200, 200, 200)
+						TextLabel_6.TextSize = 14.000
+						TextLabel_6.TextStrokeTransparency = 0.000
+						TextLabel_6.TextXAlignment = Enum.TextXAlignment.Left
 
 					local function update()
 						if Element.value.Toggle then
@@ -3207,47 +3280,62 @@ function library:New(name)
 					Section.Size = Section.Size + UDIM2(0,0,0,16)
 					Element.value = {Toggle = data.default and data.default.Toggle or false, Color = data.default and data.default.Color or COL3RGB(255,255,255)}
 
-					local Toggle = IST("Frame")
-					local Button = IST("TextButton")
-					local Color = IST("Frame")
-					local TextLabel = IST("TextLabel")
+						local Toggle = IST("Frame")
+						local Button = IST("TextButton")
+						local backcolor = Instance.new("Frame")
+						local Color = IST("Frame")
+						local TextLabel = IST("TextLabel")
+	
+						Toggle.Name = "Toggle"
+						Toggle.Parent = Frame
+						Toggle.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+						Toggle.BackgroundTransparency = 1.000
+						Toggle.Position = UDim2.new(0, 0, 0.282037079, 0)
+						Toggle.Size = UDim2.new(1, 0, 0.0370370522, 15)
 
-					Toggle.Name = "Toggle"
-					Toggle.Parent = Inner
-					Toggle.BackgroundColor3 = COL3RGB(255, 255, 255)
-					Toggle.BackgroundTransparency = 1.000
-					Toggle.Size = UDIM2(1, 0, 0, 15)
+						Button.Name = "Button"
+						Button.Parent = Toggle
+						Button.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+						Button.BackgroundTransparency = 1.000
+						Button.Size = UDim2.new(1, 0, 1, 0)
+						Button.Font = Enum.Font.GothamSemibold
+						Button.Text = ""
+						Button.TextColor3 = Color3.fromRGB(0, 0, 0)
+						Button.TextSize = 12.000
+	
+						backcolor.Name = "backcolor"
+						backcolor.Parent = Button_3
+						backcolor.AnchorPoint = Vector2.new(0, 0.5)
+						backcolor.BackgroundColor3 = Color3.fromRGB(40, 40, 40)
+						backcolor.BorderColor3 = Color3.fromRGB(0, 0, 0)
+						backcolor.Position = UDim2.new(0, 15, 0.5, 0)
+						backcolor.Size = UDim2.new(0, 12, 0, 12)
+						Color.Name = "Color"
+						Color.Parent = backcolor
+						Color.AnchorPoint = Vector2.new(0.5, 0.5)
+						Color.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+						Color.BorderColor3 = Color3.fromRGB(30, 30, 30)
+						Color.BorderSizePixel = 0
+						Color.Position = UDim2.new(0.5, 0, 0.5, 0)
+						Color.Size = UDim2.new(0, 10, 0, 10)
+						
+						local UIGradient = IST("UIGradient")
+						UIGradient_6.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(255, 255, 255)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(100, 100, 100))}
+						UIGradient_6.Rotation = 90
+						UIGradient_6.Parent = Color
 
-					Button.Name = "Button"
-					Button.Parent = Toggle
-					Button.BackgroundColor3 = COL3RGB(255, 255, 255)
-					Button.BackgroundTransparency = 1.000
-					Button.Size = UDIM2(1, 0, 1, 0)
-					Button.Font = Enum.Font.SourceSans
-					Button.Text = ""
-					Button.TextColor3 = COL3RGB(0, 0, 0)
-					Button.TextSize = 14.000
-
-					Color.Name = "Color"
-					Color.Parent = Button
-					Color.BackgroundColor3 = COL3RGB(15, 15, 15)
-					Color.BorderColor3 = COL3RGB(1, 1, 1)
-					Color.Position = UDIM2(0, 15, 0.5, -5)
-					Color.Size = UDIM2(0, 8, 0, 8)
-					local UIGradient = IST("UIGradient")
-					UIGradient.Color = ColorSequence.new{ColorSequenceKeypoint.new(0, CLR), ColorSequenceKeypoint.new(1, COL3RGB(100, 100, 100))}
-					UIGradient.Rotation = 90
-					UIGradient.Parent = Color
-					TextLabel.Parent = Button
-					TextLabel.BackgroundColor3 = COL3RGB(255, 255, 255)
-					TextLabel.BackgroundTransparency = 1.000
-					TextLabel.Position = UDIM2(0, 32, 0, -1)
-					TextLabel.Size = UDIM2(0.111913361, 208, 1, 0)
-					TextLabel.Font = Enum.Font.Code
-					TextLabel.Text = text
-					TextLabel.TextColor3 = COL3RGB(200, 200, 200)
-					TextLabel.TextSize = 14.000
-					TextLabel.TextXAlignment = Enum.TextXAlignment.Left
+						TextLabel_6.Parent = Button_3
+						TextLabel_6.AnchorPoint = Vector2.new(0, 0.5)
+						TextLabel_6.BackgroundColor3 = Color3.fromRGB(223, 190, 117)
+						TextLabel_6.BackgroundTransparency = 1.000
+						TextLabel_6.Position = UDim2.new(0, 32, 0.5, 0)
+						TextLabel_6.Size = UDim2.new(0.111913361, 208, 1, 0)
+						TextLabel_6.Font = Enum.Font.Code
+						TextLabel_6.Text = text
+						TextLabel_6.TextColor3 = Color3.fromRGB(200, 200, 200)
+						TextLabel_6.TextSize = 14.000
+						TextLabel_6.TextStrokeTransparency = 0.000
+						TextLabel_6.TextXAlignment = Enum.TextXAlignment.Left
 
 					local function update()
 						if Element.value.Toggle then
@@ -3471,183 +3559,197 @@ function library:New(name)
 					Section.Size = Section.Size + UDIM2(0,0,0,16)
 					Element.value = {Toggle = data.default and data.default.Toggle or false, Color = data.default and data.default.Color or COL3RGB(255,255,255), Transparency = data.default and data.default.Transparency or 0}
 
-					local Toggle = IST("Frame")
-					local Button = IST("TextButton")
-					local Color = IST("Frame")
-					local TextLabel = IST("TextLabel")
+						local Toggle = IST("Frame")
+						local Button = IST("TextButton")
+						local backcolor = Instance.new("Frame")
+						local Color = IST("Frame")
+						local TextLabel = IST("TextLabel")
+	
+						Toggle.Name = "Toggle"
+						Toggle.Parent = Frame
+						Toggle.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+						Toggle.BackgroundTransparency = 1.000
+						Toggle.Position = UDim2.new(0, 0, 0.282037079, 0)
+						Toggle.Size = UDim2.new(1, 0, 0.0370370522, 15)
 
-					
-					Toggle.Name = "Toggle"
-					Toggle.Parent = Inner
-					Toggle.BackgroundColor3 = COL3RGB(255, 255, 255)
-					Toggle.BackgroundTransparency = 1.000
-					Toggle.Size = UDIM2(1, 0, 0, 15)
+						Button.Name = "Button"
+						Button.Parent = Toggle
+						Button.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+						Button.BackgroundTransparency = 1.000
+						Button.Size = UDim2.new(1, 0, 1, 0)
+						Button.Font = Enum.Font.GothamSemibold
+						Button.Text = ""
+						Button.TextColor3 = Color3.fromRGB(0, 0, 0)
+						Button.TextSize = 12.000
+	
+						backcolor.Name = "backcolor"
+						backcolor.Parent = Button_3
+						backcolor.AnchorPoint = Vector2.new(0, 0.5)
+						backcolor.BackgroundColor3 = Color3.fromRGB(40, 40, 40)
+						backcolor.BorderColor3 = Color3.fromRGB(0, 0, 0)
+						backcolor.Position = UDim2.new(0, 15, 0.5, 0)
+						backcolor.Size = UDim2.new(0, 12, 0, 12)
+						Color.Name = "Color"
+						Color.Parent = backcolor
+						Color.AnchorPoint = Vector2.new(0.5, 0.5)
+						Color.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+						Color.BorderColor3 = Color3.fromRGB(30, 30, 30)
+						Color.BorderSizePixel = 0
+						Color.Position = UDim2.new(0.5, 0, 0.5, 0)
+						Color.Size = UDim2.new(0, 10, 0, 10)
+						
+						local UIGradient = IST("UIGradient")
+						UIGradient_6.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(255, 255, 255)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(100, 100, 100))}
+						UIGradient_6.Rotation = 90
+						UIGradient_6.Parent = Color
 
-					Button.Name = "Button"
-					Button.Parent = Toggle
-					Button.BackgroundColor3 = COL3RGB(255, 255, 255)
-					Button.BackgroundTransparency = 1.000
-					Button.Size = UDIM2(1, 0, 1, 0)
-					Button.Font = Enum.Font.SourceSans
-					Button.Text = ""
-					Button.TextColor3 = COL3RGB(0, 0, 0)
-					Button.TextSize = 14.000
-
-					Color.Name = "Color"
-					Color.Parent = Button
-					Color.BackgroundColor3 = COL3RGB(15, 15, 15)
-					Color.BorderColor3 = COL3RGB(1, 1, 1)
-					Color.Position = UDIM2(0, 15, 0.5, -5)
-					Color.Size = UDIM2(0, 8, 0, 8)
-					local UIGradient = IST("UIGradient")
-					UIGradient.Color = ColorSequence.new{ColorSequenceKeypoint.new(0, CLR), ColorSequenceKeypoint.new(1, COL3RGB(100, 100, 100))}
-					UIGradient.Rotation = 90
-					UIGradient.Parent = Color		
-					local UIGradient = IST("UIGradient")
-					UIGradient.Color = ColorSequence.new{ColorSequenceKeypoint.new(0, CLR), ColorSequenceKeypoint.new(1, COL3RGB(100, 100, 100))}
-					UIGradient.Rotation = 90
-					UIGradient.Parent = Color
-					
-					TextLabel.Parent = Button
-					TextLabel.BackgroundColor3 = COL3RGB(255, 255, 255)
-					TextLabel.BackgroundTransparency = 1.000
-					TextLabel.Position = UDIM2(0, 32, 0, -1)
-					TextLabel.Size = UDIM2(0.111913361, 208, 1, 0)
-					TextLabel.Font = Enum.Font.Code
-					TextLabel.Text = text
-					TextLabel.TextColor3 = COL3RGB(200, 200, 200)
-					TextLabel.TextSize = 14.000
-					TextLabel.TextXAlignment = Enum.TextXAlignment.Left
-
-					local function update()
-						if Element.value.Toggle then
-							tween = library:Tween(Color, TweenInfo.new(0.1, Enum.EasingStyle.Quad, Enum.EasingDirection.Out), {BackgroundColor3 = COL3RGB(255, 255, 255)})
-							library:Tween(TextLabel, TweenInfo.new(0.1, Enum.EasingStyle.Quad, Enum.EasingDirection.Out), {TextColor3 = COL3RGB(255, 255, 255)})
-						else
-							tween = library:Tween(Color, TweenInfo.new(0.1, Enum.EasingStyle.Quad, Enum.EasingDirection.Out), {BackgroundColor3 = COL3RGB(15, 15, 15)})
-							library:Tween(TextLabel, TweenInfo.new(0.1, Enum.EasingStyle.Quad, Enum.EasingDirection.Out), {TextColor3 = COL3RGB(200, 200, 200)})
+						TextLabel_6.Parent = Button_3
+						TextLabel_6.AnchorPoint = Vector2.new(0, 0.5)
+						TextLabel_6.BackgroundColor3 = Color3.fromRGB(223, 190, 117)
+						TextLabel_6.BackgroundTransparency = 1.000
+						TextLabel_6.Position = UDim2.new(0, 32, 0.5, 0)
+						TextLabel_6.Size = UDim2.new(0.111913361, 208, 1, 0)
+						TextLabel_6.Font = Enum.Font.Code
+						TextLabel_6.Text = text
+						TextLabel_6.TextColor3 = Color3.fromRGB(200, 200, 200)
+						TextLabel_6.TextSize = 14.000
+						TextLabel_6.TextStrokeTransparency = 0.000
+						TextLabel_6.TextXAlignment = Enum.TextXAlignment.Left
+	
+						local function update()
+							if Element.value.Toggle then
+								tween = library:Tween(Color, TweenInfo.new(0.1, Enum.EasingStyle.Quad, Enum.EasingDirection.Out), {BackgroundColor3 = COL3RGB(255, 255, 255)})
+								library:Tween(TextLabel, TweenInfo.new(0.1, Enum.EasingStyle.Quad, Enum.EasingDirection.Out), {TextColor3 = COL3RGB(255, 255, 255)})
+							else
+								tween = library:Tween(Color, TweenInfo.new(0.1, Enum.EasingStyle.Quad, Enum.EasingDirection.Out), {BackgroundColor3 = COL3RGB(15, 15, 15)})
+								library:Tween(TextLabel, TweenInfo.new(0.1, Enum.EasingStyle.Quad, Enum.EasingDirection.Out), {TextColor3 = COL3RGB(200, 200, 200)})
+							end
+							values[tabname][sectorname][tabtext][text] = Element.value
+							callback(Element.value)
 						end
-						values[tabname][sectorname][text] = Element.value
-						callback(Element.value)
-					end
-
-					local ColorH,ColorS,ColorV
-
-					local ColorP = IST("TextButton")
-					local Frame = IST("Frame")
-					local Colorpick = IST("ImageButton")
-					local ColorDrag = IST("Frame")
-					local Huepick = IST("ImageButton")
-					local Huedrag = IST("Frame")
-
-					ColorP.Name = "ColorP"
-					ColorP.Parent = Button
-					ColorP.AnchorPoint = Vc2(1, 0)
-					ColorP.BackgroundColor3 = COL3RGB(255, 0, 0)
-					ColorP.BorderColor3 = COL3RGB(1, 1, 1)
-					ColorP.Position = UDIM2(0, 270, 0.5, -4)
-					ColorP.Size = UDIM2(0, 18, 0, 8)
-					ColorP.AutoButtonColor = false
-					ColorP.Font = Enum.Font.Code
-					ColorP.Text = ""
-					ColorP.TextColor3 = COL3RGB(200, 200, 200)
-					ColorP.TextSize = 14.000
-
-					Frame.Parent = ColorP
-					Frame.BackgroundColor3 = COL3RGB(30, 30, 30)
-					Frame.BorderColor3 = COL3RGB(1, 1, 1)
-					Frame.Position = UDIM2(-0.666666687, -170, 1.375, 0)
-					Frame.Size = UDIM2(0, 200, 0, 190)
-					Frame.Visible = false
-					Frame.ZIndex = 3
-
-					Colorpick.Name = "Colorpick"
-					Colorpick.Parent = Frame
-					Colorpick.BackgroundColor3 = COL3RGB(255, 255, 255)
-					Colorpick.BorderColor3 = COL3RGB(1, 1, 1)
-					Colorpick.ClipsDescendants = false
-					Colorpick.Position = UDIM2(0, 40, 0, 10)
-					Colorpick.Size = UDIM2(0, 150, 0, 150)
-					Colorpick.AutoButtonColor = false
-					Colorpick.Image = "rbxassetid://4155801252"
-					Colorpick.ImageColor3 = COL3RGB(255, 0, 0)
-					Colorpick.ZIndex = 3
-
-					ColorDrag.Name = "ColorDrag"
-					ColorDrag.Parent = Colorpick
-					ColorDrag.AnchorPoint = Vc2(0.5, 0.5)
-					ColorDrag.BackgroundColor3 = COL3RGB(255, 255, 255)
-					ColorDrag.BorderColor3 = COL3RGB(1, 1, 1)
-					ColorDrag.Size = UDIM2(0, 4, 0, 4)
-					ColorDrag.ZIndex = 3
-
-					Huepick.Name = "Huepick"
-					Huepick.Parent = Frame
-					Huepick.BackgroundColor3 = COL3RGB(255, 255, 255)
-					Huepick.BorderColor3 = COL3RGB(1, 1, 1)
-					Huepick.ClipsDescendants = true
-					Huepick.Position = UDIM2(0, 10, 0, 10)
-					Huepick.Size = UDIM2(0, 20, 0, 150)
-					Huepick.AutoButtonColor = false
-					Huepick.Image = "rbxassetid://3641079629"
-					Huepick.ImageColor3 = COL3RGB(255, 0, 0)
-					Huepick.ImageTransparency = 1
-					Huepick.BackgroundTransparency = 0
-					Huepick.ZIndex = 3
-
-					local HueFrameGradient = IST("UIGradient")
-					HueFrameGradient.Rotation = 90
-					HueFrameGradient.Name = "HueFrameGradient"
-					HueFrameGradient.Parent = Huepick
-					HueFrameGradient.Color = ColorSequence.new {
-						ColorSequenceKeypoint.new(0.00, COL3RGB(255, 0, 0)),
-						ColorSequenceKeypoint.new(0.17, COL3RGB(255, 0, 255)),
-						ColorSequenceKeypoint.new(0.33, COL3RGB(0, 0, 255)),
-						ColorSequenceKeypoint.new(0.50, COL3RGB(0, 255, 255)),
-						ColorSequenceKeypoint.new(0.67, COL3RGB(0, 255, 0)),
-						ColorSequenceKeypoint.new(0.83, COL3RGB(255, 255, 0)),
-						ColorSequenceKeypoint.new(1.00, COL3RGB(255, 0, 0))
-					}	
-
-					Huedrag.Name = "Huedrag"
-					Huedrag.Parent = Huepick
-					Huedrag.BackgroundColor3 = COL3RGB(255, 255, 255)
-					Huedrag.BorderColor3 = COL3RGB(1, 1, 1)
-					Huedrag.Size = UDIM2(1, 0, 0, 2)
-					Huedrag.ZIndex = 3
-
-					local Transpick = IST("ImageButton")
-					local Transcolor = IST("ImageLabel")
-					local Transdrag = IST("Frame")
-
-					Transpick.Name = "Transpick"
-					Transpick.Parent = Frame
-					Transpick.BackgroundColor3 = COL3RGB(255, 255, 255)
-					Transpick.BorderColor3 = COL3RGB(1, 1, 1)
-					Transpick.Position = UDIM2(0, 10, 0, 167)
-					Transpick.Size = UDIM2(0, 180, 0, 15)
-					Transpick.AutoButtonColor = false
-					Transpick.Image = "rbxassetid://3887014957"
-					Transpick.ScaleType = Enum.ScaleType.Tile
-					Transpick.TileSize = UDIM2(0, 10, 0, 10)
-					Transpick.ZIndex = 3
-
-					Transcolor.Name = "Transcolor"
-					Transcolor.Parent = Transpick
-					Transcolor.BackgroundColor3 = COL3RGB(255, 255, 255)
-					Transcolor.BackgroundTransparency = 1.000
-					Transcolor.Size = UDIM2(1, 0, 1, 0)
-					Transcolor.Image = "rbxassetid://3887017050"
-					Transcolor.ImageColor3 = COL3RGB(255, 0, 4)
-					Transcolor.ZIndex = 3
-
-					Transdrag.Name = "Transdrag"
-					Transdrag.Parent = Transcolor
-					Transdrag.BackgroundColor3 = COL3RGB(255, 255, 255)
-					Transdrag.BorderColor3 = COL3RGB(1, 1, 1)
-					Transdrag.Position = UDIM2(0, -1, 0, 0)
-					Transdrag.Size = UDIM2(0, 2, 1, 0)
-					Transdrag.ZIndex = 3
+	
+						local ColorH,ColorS,ColorV
+	
+						local ColorP = IST("TextButton")
+						local Frame = IST("Frame")
+						local Colorpick = IST("ImageButton")
+						local ColorDrag = IST("Frame")
+						local Huepick = IST("ImageButton")
+						local Huedrag = IST("Frame")
+	
+						ColorP.Name = "ColorP"
+						ColorP.Parent = Button
+						ColorP.AnchorPoint = Vc2(1, 0)
+						ColorP.BackgroundColor3 = COL3RGB(255, 0, 0)
+						ColorP.BorderColor3 = COL3RGB(1, 1, 1)
+						ColorP.Position = UDIM2(0, 270, 0.5, -4)
+						ColorP.Size = UDIM2(0, 18, 0, 8)
+						ColorP.AutoButtonColor = false
+						ColorP.Font = Enum.Font.Code
+						ColorP.Text = ""
+						ColorP.TextColor3 = COL3RGB(200, 200, 200)
+						ColorP.TextSize = 14.000
+						local UIGradient = Instance.new("UIGradient")
+						
+						UIGradient.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(255, 255, 255)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(100, 100, 100))}
+						UIGradient.Rotation = 90
+						UIGradient.Parent = ColorP
+	
+						Frame.Parent = ColorP
+						Frame.BackgroundColor3 = COL3RGB(30, 30, 30)
+						Frame.BorderColor3 = COL3RGB(1, 1, 1)
+						Frame.Position = UDIM2(-0.666666687, -170, 1.375, 0)
+						Frame.Size = UDIM2(0, 200, 0, 190)
+						Frame.Visible = false
+						Frame.ZIndex = 3
+	
+						Colorpick.Name = "Colorpick"
+						Colorpick.Parent = Frame
+						Colorpick.BackgroundColor3 = COL3RGB(255, 255, 255)
+						Colorpick.BorderColor3 = COL3RGB(1, 1, 1)
+						Colorpick.ClipsDescendants = false
+						Colorpick.Position = UDIM2(0, 40, 0, 10)
+						Colorpick.Size = UDIM2(0, 150, 0, 150)
+						Colorpick.AutoButtonColor = false
+						Colorpick.Image = "rbxassetid://4155801252"
+						Colorpick.ImageColor3 = COL3RGB(255, 0, 0)
+						Colorpick.ZIndex = 3
+	
+						ColorDrag.Name = "ColorDrag"
+						ColorDrag.Parent = Colorpick
+						ColorDrag.AnchorPoint = Vc2(0.5, 0.5)
+						ColorDrag.BackgroundColor3 = COL3RGB(255, 255, 255)
+						ColorDrag.BorderColor3 = COL3RGB(1, 1, 1)
+						ColorDrag.Size = UDIM2(0, 4, 0, 4)
+						ColorDrag.ZIndex = 3
+	
+						Huepick.Name = "Huepick"
+						Huepick.Parent = Frame
+						Huepick.BackgroundColor3 = COL3RGB(255, 255, 255)
+						Huepick.BorderColor3 = COL3RGB(1, 1, 1)
+						Huepick.ClipsDescendants = true
+						Huepick.Position = UDIM2(0, 10, 0, 10)
+						Huepick.Size = UDIM2(0, 20, 0, 150)
+						Huepick.AutoButtonColor = false
+						Huepick.Image = "rbxassetid://3641079629"
+						Huepick.ImageColor3 = COL3RGB(255, 0, 0)
+						Huepick.ImageTransparency = 1
+						Huepick.BackgroundTransparency = 0
+						Huepick.ZIndex = 3
+	
+						local HueFrameGradient = IST("UIGradient")
+						HueFrameGradient.Rotation = 90
+						HueFrameGradient.Name = "HueFrameGradient"
+						HueFrameGradient.Parent = Huepick
+						HueFrameGradient.Color = ColorSequence.new {
+							ColorSequenceKeypoint.new(0.00, COL3RGB(255, 0, 0)),
+							ColorSequenceKeypoint.new(0.17, COL3RGB(255, 0, 255)),
+							ColorSequenceKeypoint.new(0.33, COL3RGB(0, 0, 255)),
+							ColorSequenceKeypoint.new(0.50, COL3RGB(0, 255, 255)),
+							ColorSequenceKeypoint.new(0.67, COL3RGB(0, 255, 0)),
+							ColorSequenceKeypoint.new(0.83, COL3RGB(255, 255, 0)),
+							ColorSequenceKeypoint.new(1.00, COL3RGB(255, 0, 0))
+						}	
+	
+						Huedrag.Name = "Huedrag"
+						Huedrag.Parent = Huepick
+						Huedrag.BackgroundColor3 = COL3RGB(255, 255, 255)
+						Huedrag.BorderColor3 = COL3RGB(1, 1, 1)
+						Huedrag.Size = UDIM2(1, 0, 0, 2)
+						Huedrag.ZIndex = 3
+	
+						local Transpick = IST("ImageButton")
+						local Transcolor = IST("ImageLabel")
+						local Transdrag = IST("Frame")
+	
+						Transpick.Name = "Transpick"
+						Transpick.Parent = Frame
+						Transpick.BackgroundColor3 = COL3RGB(255, 255, 255)
+						Transpick.BorderColor3 = COL3RGB(1, 1, 1)
+						Transpick.Position = UDIM2(0, 10, 0, 167)
+						Transpick.Size = UDIM2(0, 180, 0, 15)
+						Transpick.AutoButtonColor = false
+						Transpick.Image = "rbxassetid://3887014957"
+						Transpick.ScaleType = Enum.ScaleType.Tile
+						Transpick.TileSize = UDIM2(0, 10, 0, 10)
+						Transpick.ZIndex = 3
+	
+						Transcolor.Name = "Transcolor"
+						Transcolor.Parent = Transpick
+						Transcolor.BackgroundColor3 = COL3RGB(255, 255, 255)
+						Transcolor.BackgroundTransparency = 1.000
+						Transcolor.Size = UDIM2(1, 0, 1, 0)
+						Transcolor.Image = "rbxassetid://3887017050"
+						Transcolor.ImageColor3 = COL3RGB(255, 0, 4)
+						Transcolor.ZIndex = 3
+	
+						Transdrag.Name = "Transdrag"
+						Transdrag.Parent = Transcolor
+						Transdrag.BackgroundColor3 = COL3RGB(255, 255, 255)
+						Transdrag.BorderColor3 = COL3RGB(1, 1, 1)
+						Transdrag.Position = UDIM2(0, -1, 0, 0)
+						Transdrag.Size = UDIM2(0, 2, 1, 0)
+						Transdrag.ZIndex = 3
 
 					ColorP.MouseButton1Down:Connect(function()
 						Frame.Visible = not Frame.Visible
@@ -4019,69 +4121,64 @@ function library:New(name)
 
 					Section.Size = Section.Size + UDIM2(0,0,0,25)
 
-					local Slider = IST("Frame")
-					local TextLabel = IST("TextLabel")
-					local Button = IST("TextButton")
-					local UIGradient2 = IST("UIGradient")
-					local Frame = IST("Frame")
-					local UIGradient = IST("UIGradient")
-					local Value = IST("TextLabel")
+					local Slider = Instance.new("Frame")
+					local TextLabel = Instance.new("TextLabel")
+					local Button = Instance.new("TextButton")
+					local Frame = Instance.new("Frame")
+					local UIGradient = Instance.new("UIGradient")
+					local Value = Instance.new("TextLabel")
 
 					Slider.Name = "Slider"
 					Slider.Parent = Inner
-					Slider.BackgroundColor3 = COL3RGB(255, 255, 255)
+					Slider.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 					Slider.BackgroundTransparency = 1.000
-					Slider.Position = UDIM2(0, 0, 0.653061211, 0)
-					Slider.Size = UDIM2(1, 0, 0, 25)
+					Slider.Size = UDim2.new(1, 0, 0.0450000018, 25)
 
 					TextLabel.Parent = Slider
-					TextLabel.BackgroundColor3 = COL3RGB(255, 255, 255)
+					TextLabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 					TextLabel.BackgroundTransparency = 1.000
-					TextLabel.Position = UDIM2(0, 32, 0, -2)
-					TextLabel.Size = UDIM2(0, 100, 0, 15)
+					TextLabel.Position = UDim2.new(0, 32, 0, -2)
+					TextLabel.Size = UDim2.new(0, 29, 0, 15)
 					TextLabel.Font = Enum.Font.Code
-					TextLabel.Text = text
-					TextLabel.TextColor3 = COL3RGB(200, 200, 200)
+					TextLabel.Text = text..":"
+					TextLabel.TextColor3 = Color3.fromRGB(200, 200, 200)
 					TextLabel.TextSize = 14.000
+					TextLabel.TextStrokeTransparency = 0.000
 					TextLabel.TextXAlignment = Enum.TextXAlignment.Left
 
 					Button.Name = "Button"
 					Button.Parent = Slider
-					Button.BackgroundColor3 = COL3RGB(30, 30, 30)
-					Button.BorderColor3 = COL3RGB(1, 1, 1)
-					Button.Position = UDIM2(0, 30, 0, 15)
-					Button.Size = UDIM2(0, 175, 0, 5)
+					Button.BackgroundColor3 = Color3.fromRGB(30, 30, 30)
+					Button.BorderColor3 = Color3.fromRGB(1, 1, 1)
+					Button.Position = UDim2.new(0, 30, 0, 15)
+					Button.Size = UDim2.new(0, 175, 0, 15)
 					Button.AutoButtonColor = false
 					Button.Font = Enum.Font.SourceSans
 					Button.Text = ""
-					Button.TextColor3 = COL3RGB(0, 0, 0)
+					Button.TextColor3 = Color3.fromRGB(0, 0, 0)
 					Button.TextSize = 14.000
 
-				    UIGradient2.Color = ColorSequence.new{ColorSequenceKeypoint.new(0, CLR), ColorSequenceKeypoint.new(1, COL3RGB(100, 100, 100))}
-					UIGradient2.Rotation = 90
-					UIGradient2.Parent = Button
-
 					Frame.Parent = Button
-					Frame.BackgroundColor3 = COL3RGB(255, 255, 255)
+					Frame.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 					Frame.BorderSizePixel = 0
-					Frame.Size = UDIM2(0.5, 0, 1, 0)
+					Frame.Size = UDim2.new(0.5, 0, 1, 0)
 
-					UIGradient.Color = ColorSequence.new{ColorSequenceKeypoint.new(0, CLR), ColorSequenceKeypoint.new(1, COL3RGB(100, 100, 100))}
-					UIGradient.Rotation = 90
-					UIGradient.Parent = Frame
+					UIGradient_2.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(255, 255, 255)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(100, 100, 100))}
+					UIGradient_2.Rotation = 90
+					UIGradient_2.Parent = Frame_2
 
 					Value.Name = "Value"
-					Value.Parent = Slider
-					Value.BackgroundColor3 = COL3RGB(255, 255, 255)
+					Value.Parent = TextLabel
+					Value.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 					Value.BackgroundTransparency = 1.000
-					Value.Position = UDIM2(0, 150, 0, -1)
-					Value.Size = UDIM2(0, 55, 0, 15)
+					Value.Position = UDim2.new(1, 0, 0, 0)
+					Value.Size = UDim2.new(0, 20, 0, 15)
 					Value.Font = Enum.Font.Code
 					Value.Text = "50"
-					Value.TextTransparency = 1.000
-					Value.TextColor3 = COL3RGB(200, 200, 200)
+					Value.TextColor3 = Color3.fromRGB(200, 200, 200)
 					Value.TextSize = 14.000
-					Value.TextXAlignment = Enum.TextXAlignment.Right
+					Value.TextStrokeTransparency = 0.000
+					Value.TextXAlignment = Enum.TextXAlignment.Left
 					local min, max, default = data.min or 0, data.max or 100, data.default or 0
 					Element.value = {Slider = default}
 
