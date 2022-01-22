@@ -83,10 +83,6 @@ function library:SaveConfig(cfg)
 	end
 	writefile(cfglocation..cfg..".txt", game:GetService("HttpService"):JSONEncode(copy))
 end
-function library:SaveLua(lua)
-	loadstring(readfile(lualocation.."\"..lua))()
-end
-
 function library:New(name)
 	local menu = {}
 
