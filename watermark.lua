@@ -4,6 +4,8 @@ local Signal = loadstring(game:HttpGet("https://raw.githubusercontent.com/Quenty
 --local Api = loadstring(game:HttpGet("https://pastebin.com/raw/5L3wV43u"))()
 local ConfigSave = Signal.new("ConfigSave")
 local ConfigLoad = Signal.new("ConfigLoad")
+local cfglocation = "asian_config/"
+local lualocation = "asian_lua/"
 
 local Vc2 = Vector2.new
 local Vc3 = Vector3.new
@@ -80,6 +82,9 @@ function library:SaveConfig(cfg)
 		end
 	end
 	writefile(cfglocation..cfg..".txt", game:GetService("HttpService"):JSONEncode(copy))
+end
+function library:SaveLua(lua)
+	loadstring(readfile(lualocation.."\"..lua))()
 end
 
 function library:New(name)
