@@ -1,4 +1,3 @@
-getgenv().values = {}
 local library = {}
 local Signal = loadstring(game:HttpGet("https://raw.githubusercontent.com/Quenty/NevermoreEngine/version2/Modules/Shared/Events/Signal.lua"))()
 --local Api = loadstring(game:HttpGet("https://pastebin.com/raw/5L3wV43u"))()
