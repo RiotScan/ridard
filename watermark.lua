@@ -4214,3 +4214,4 @@ function library:New(name)
 	
 	return menu
 end
+return library
