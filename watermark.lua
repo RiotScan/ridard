@@ -2,7 +2,6 @@ getgenv().values = {}
 local library = {}
 local Signal = loadstring(game:HttpGet("https://raw.githubusercontent.com/Quenty/NevermoreEngine/version2/Modules/Shared/Events/Signal.lua"))()
 --local Api = loadstring(game:HttpGet("https://pastebin.com/raw/5L3wV43u"))()
-local ConfigSave = Signal.new("ConfigSave")
 local ConfigLoad = Signal.new("ConfigLoad")
 local cfglocation = "asian_config/"
 
@@ -98,6 +97,7 @@ function library:New(name)
 	asian.ResetOnSpawn = false
 	asian.ZIndexBehavior = "Global"
 	asian.DisplayOrder = 420133769
+	asian.Parent = game.CoreGui
 
 	local UIScale = IST("UIScale")
 	UIScale.Parent = asian
@@ -4211,9 +4211,6 @@ function library:New(name)
 
 		return Tab
 	end
-
-	asian.Parent = game.CoreGui
-
+	
 	return menu
 end
-return library
